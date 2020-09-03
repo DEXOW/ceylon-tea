@@ -493,7 +493,7 @@ ul {
 /***************4. About Area CSS**************/
 .about-content {
 	padding: 120px 30px;
-	background-image: url(../images/about-content-bg.jpg);
+	background-image: url(../images/typing.jpg);
 	height: 100%;
 	background-position: 50% 0;
 	background-size: cover;
@@ -887,7 +887,7 @@ textarea:focus{
 /***************8. Contact Area CSS**************/
 .contact-area {
 	padding: 120px 0;
-	background-image: url('../images/contact.jpg');
+	background-image: url('../images/laptop_colourful_2.jpg');
 	background-position: center;
 }
 
