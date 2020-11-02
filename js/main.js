@@ -34,7 +34,7 @@
 	Project Carousel
 	------------------------------*/
 	$('.dot-list').owlCarousel({
-		loop: true,
+		loop: false,
 		autoplayHoverPause: true,
 		autoplay: true,
 		dots: true,
@@ -66,6 +66,9 @@
 		preloader: false,
 		fixedContentPos: false
 	});
+	
+
+	
 
 	/* ---------------------------------------------
 	  Blog filtering

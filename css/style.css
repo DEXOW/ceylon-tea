@@ -506,8 +506,24 @@ ul {
 	transition: .5s;
 }
 
-.social ul li a:hover {
+/* .social ul li a:hover {
 	color: #ff3434
+} */
+
+.footer-socials-1:hover{
+	color: #6441A5;
+}
+
+.footer-socials-2:hover{
+	color: #ff3434;
+}
+
+.footer-socials-3:hover{
+	color: #E1306C;
+}
+
+.footer-socials-4:hover{
+	color: #1DA1F2;
 }
 
 /***************4. About Area CSS**************/
@@ -522,7 +538,7 @@ ul {
 /*4.1 Personal Info*/
 .about-image {
 	/* background-image: url(../images/about.jpg); */
-	background-image: linear-gradient(47deg, #0008, #0008),url(https://cdn.discordapp.com/attachments/731132420211998851/750289504685916240/orsrc53769.png);
+	background-image: linear-gradient(47deg, #0008, #0008),url(/images/dexow_pfp.png);
 	/* background-image: url(https://cdn.discordapp.com/avatars/377256577931018252/0374bf45b2fa05697c3f5bae3ffb2e9e.png?size=128); */
 	height: 100%;
 	background-position: 50% 0;
@@ -599,6 +615,10 @@ textarea:focus{
 	margin-top: 40px
 }
 
+.count-area{
+	padding: 70px 0 0 0;
+}
+
 .single-count-area {
 	color: #fff;
 	font-weight: 700;
@@ -625,9 +645,24 @@ textarea:focus{
 }
 
 /***************5. Work Area CSS***************/
+
 .my-work-area {
 	background-color: #0f0f0f;
-	padding: 120px 0
+	padding: 120px 0;
+}
+
+.work-area-youtube-heading{
+	color:  #ff3434;
+	font-size: 50px;
+	display: flex;
+	justify-content: center;
+}
+
+.work-area-twitch-heading{
+	color:  #6441A5;
+	font-size: 50px;
+	display: flex;
+	justify-content: center;
 }
 
 .single-work {
@@ -636,6 +671,7 @@ textarea:focus{
 	-webkit-transition: .5s;
 	transition: .5s;
 	overflow: hidden;
+	width: auto;
 }
 
 .single-work img {
@@ -664,6 +700,27 @@ textarea:focus{
 }
 
 /*5.2 Play Button*/
+
+.play-button-twitch i {
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	z-index: 9999999;
+	color: #fff;
+	font-size: 35px;
+	background-color: #6441A5;
+	border-radius: 12px;
+	height: 40px;
+	width: 52px;
+	line-height: 40px;
+	text-align: center;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	-webkit-transition: .8s;
+	transition: .8s
+}
+
 .play-button i {
 	position: absolute;
 	top: 0%;
@@ -684,9 +741,15 @@ textarea:focus{
 	transition: .8s
 }
 
+
 /*5.3 All Hover*/
 .single-work:hover .work-text {
 	bottom: 0;
+}
+
+.single-work:hover .play-button-twitch i {
+	opacity: 1;
+	top: 35%
 }
 
 .single-work:hover .play-button i {
@@ -1656,7 +1719,7 @@ ul.countdown li {
 }
 
 ::selection{
-	color: #FF3434;
+	color: #668fff;
 	background: transparent;
 }
 
@@ -1666,6 +1729,154 @@ ul.countdown li {
 	justify-content: center;
 	justify-content: space-around;
 }
+
+.maintanence{
+    display: block;
+	width: 1550px;
+	height: 695px;
+}
+
+/***************15. Blog Display**************/
+
+.blogs{
+	display: block;
+	position: relative;
+}
+
+.blog-display{
+	display: flex;
+	justify-content: center;
+}
+
+.blog-display-description{
+	text-align: center;
+	padding: 50px 0 0 0;
+}
+
+.blog-display-description-heading{
+	font-size: 40px;
+	margin: 10px 0 10px 0;
+}
+
+.blog-display-description-sub-heading{
+	font-size: 15px;
+	padding: 5px 0 10px 0;
+	margin: 0;
+}
+
+.blog-selection{
+	position: relative;
+}
+
+
+
+/***************14. Single Blog **************/
+
+.blog-page{
+	display: block;
+	margin: 100px 0 10px 30px;
+}
+
+.blog{
+	margin: 50px 0 10px 0px;
+	display: flex;
+}
+
+.blog-main-heading{
+	display: flex;
+	justify-content: left;
+	font-size: 60px;
+	margin: 0 0 0 10px;
+}
+
+.blog-author{
+	position: relative;
+	display: flex;
+	margin: 30px 50px 10px 0;
+}
+
+.author-profile{
+	width: 60px;
+	height: 60px;
+	margin: 5px;
+	
+}
+
+.author-info{
+	margin: 5px 0 0 10px;
+}
+
+.author-name{
+	font-size: 20px;
+}
+
+.blog-date{
+	margin: 5px 0 0 2px;
+	padding: 0;
+}
+
+.blog-time{
+	margin: 5px 0 0 2px;
+	padding: 0;
+}
+
+.blog-info{
+	display: block;
+	padding: 20px 50px 100px 40px;
+	width: 1000px;
+}
+
+.blog-writings{
+	font-size: 20px;
+}
+
+.links{
+	color: #FF3434;
+}
+
+.links:hover{
+	color: #aa2424;
+}
+
+.right-column{
+	width: 376px;
+}
+
+.other-blogs{
+	margin: 0 0 0 0;
+	background-color: #141313;
+	text-align: center;
+	height: 430px;
+	width: 360px;
+}
+
+.other-blogs h2{
+	text-align: center;
+	height: 50px;
+	padding: 40px 0 50px 0;
+}
+
+.other-blog-1{
+	display: flex;
+	justify-content: center;
+	padding: 10px 0 10px 0;
+}
+
+.other-blog-1 img{
+	height: 55px;
+}
+
+.other-blog-1-description{
+	width: 235px;
+	text-align: left;
+	margin: 0 0 0 5px;
+}
+
+.advertsing{
+	text-align: center;
+	margin: 50px 0 50px 0;
+}
+
 /*=====================================
 =======================================
 				THE END
