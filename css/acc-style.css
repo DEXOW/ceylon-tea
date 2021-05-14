@@ -1,0 +1,212 @@
+
+/*----Accounts----*/
+
+/*----Login----*/
+
+.loginBg{
+    position: absolute;
+    display: block;
+    float: left;
+    top: 0px;
+    width: 1518px;
+    height: 1097px;
+}
+.loginbox{
+    width: 320px;
+    height: 450px;
+    background: #000;
+    color: #fff;
+    top: 550px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    opacity: 80%;
+    border-radius: 30px;
+}
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+.loginHead{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 45px;
+    font-family: neutronium;
+}
+
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-family: neutropolitical;
+}
+
+.loginbox input{
+    width: 90%;
+    margin-bottom: 20px;
+    font-family: neutropolitical;
+}
+
+.loginbox input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.fa{
+    margin-right: 10px;
+}
+
+.eye{
+    position: absolute;
+    left: 85%;
+    top: 260px;
+}
+
+#hide1{
+    display: none;
+}
+
+.loginbox input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.loginbox input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #e22323;
+    color: #fff;
+}
+.loginbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+    font-family: neutropolitical;
+}
+
+.loginbox a:hover
+{
+    text-decoration: none;
+    color: #e22323;
+}
+
+/*----Sign Up----*/
+
+.SignUpbox{
+    width: 320px;
+    height: 670px;
+    background: #000;
+    color: #fff;
+    top: 500px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    opacity: 80%;
+    border-radius: 30px;
+}
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+.SignUpHead{
+    margin: 0;
+    padding: 0 0 40px;
+    text-align: center;
+    font-size: 45px;
+    font-family: neutronium;
+}
+
+.SignUpText{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-family: neutropolitical;
+}
+
+
+.SignUpbox input{
+    width: 100%;
+    font-family: neutropolitical;
+    margin-bottom: 20px;
+}
+
+.name input{
+    width: 49%;
+    position: relative;
+    display: inline-block;
+}
+
+.SignUpbox input[type="text"], input[type="password"], input[type="email"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.SignUpbox input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.SignUpbox input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #e22323;
+    color: #fff;
+}
+.SignUpbox a{
+    text-decoration: none;
+    font-size: 11px;
+    line-height: 20px;
+    color: darkgrey;
+    font-family: neutropolitical;
+}
+
+.SignUpbox a:hover
+{
+    text-decoration: none;
+    color: #e22323;
+}
+
+
+.imagesArea-account{
+    position: relative;
+    top: 1000px;
+}

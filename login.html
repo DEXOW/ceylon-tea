@@ -4,7 +4,7 @@
   <title>Vortex</title>
   <link rel="shortcut icon" href="/img/circle-cropped.png" type="image/png">
   <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/about-style.css">
+  <link rel="stylesheet" href="/css/acc-style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" ></script>
@@ -45,23 +45,55 @@
       </div>
     </nav>
   </section>
-  <section id="AboutUsBody">
-      <div class="aboutUs">
-          <h2 class="aboutUsTitle">About us</h2>
-          <div class="dexowPro">
-              <h4 class="dexow">DEXOW</h4>
-              <img class="dexLogo" src="/img/logo.png">
-              <p class="dexowDes">
-              </p>
-          </div>
+  <!--<img class="maintanence" src="/img/maintanience.jpg">-->
+  <section id="LoginBody">
+    <div class="login">
+      <img class="loginBg" src="/img/laptop3.jpg" alt="Background-Img">
+      <div class="loginbox">
+          <img src="/img/avatar.png" class="avatar">
+          <h1 class="loginHead">LOGIN</h1>
+          <form>
+              <p>Username</p>
+              <input type="text" name="" placeholder="Enter Username">
+              <p>Password</p>
+              <input type="password" name="" placeholder="Enter Password" id="pass">
+              <span class="eye" onclick="passVis()">
+                <i id="hide2" class="far fa-eye-slash"></i>
+                <i id="hide1" class="far fa-eye"></i>
+              </span>
+              <script>
+                function passVis(){
+                  var x = document.getElementById("pass");
+                  var y = document.getElementById("hide1");
+                  var z = document.getElementById("hide2");
+
+                  if(x.type === 'password'){
+                    x.type = "text";
+                    y.style.display = "block";
+                    z.style.display = "none";
+                  }
+                  else{
+                    x.type = "password";
+                    y.style.display = "none";
+                    z.style.display = "block"
+                  }
+                }
+              </script>
+              <input type="submit" name="" value="Login">
+              <a href="#">Forgot password?</a><br>
+              <a href="signup.html">Don't have an account?</a>
+          </form>
+          
       </div>
+        
+    </div>
   
-    <!--<div class="imagesArea">
-      <a href="....."><img class="gameImage" src="/img/fortnite.jpg" alt="Fortnite"></a>
-      <a href="....."><img class="gameImage" src="/img/pubg.jpg" alt="Pubg"></a>
-      <a href="....."><img class="gameImage" src="/img/csgo.jpg" alt="CSGO"></a>
-      <img class="gameImage" src="/img/ff.jpg" alt="FF">
-    </div>-->
+    <div class="imagesArea-account">
+      <a href="fortnite.html"><img class="gameImage" src="/img/fortnite.jpg" alt="Fortnite"></a>
+      <a href="pubg.html"><img class="gameImage" src="/img/pubg.jpg" alt="Pubg"></a>
+      <a href="csgo.html"><img class="gameImage" src="/img/csgo.jpg" alt="CSGO"></a>
+      <a href="ff.html"><img class="gameImage" src="/img/ff.jpg" alt="FF"></a>
+    </div>
   </section>
 </body>
 </html>
