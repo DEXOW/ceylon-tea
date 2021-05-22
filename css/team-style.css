@@ -31,7 +31,7 @@
 }
 .member{
     display: inline-block;
-    padding: 0 5px 0 5px;
+    padding: 10px 5px 10px 5px;
 }
 .outline{
     padding: 1px;
@@ -55,8 +55,9 @@
     padding: 30px 0 10px 0;
 }
 .memberImg{
-    height: 300px!important;
+    height: 200px!important;
     padding: 10px;
+    border-radius: 50%;
 }
 .memberRole{
     font-size: 20px;
