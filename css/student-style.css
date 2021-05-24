@@ -1,0 +1,92 @@
+.studentContainer .top{
+    width: 100%;
+    text-align: center;
+}
+.sHeading{
+    text-align: center;
+    font-family: rock salt;
+    font-size: 40px;
+    padding: 50px 0 40px 0;
+}
+.sContent{
+    text-align: center;
+    width: 80%;
+    padding: 20px 0 80px 20%;
+}
+.rContainer{
+    text-align: center;
+    width: 100%;
+    padding: 0 0 50px 0;
+}
+.rHeading{
+    font-family: itim;
+    font-size: 30px;
+}
+.rHeading span{
+    font-family: rock salt;
+    font-size: 17px;
+    font-weight: 1000;
+}
+.rContent{
+    width: 80%;
+    transform: translate(10%,0);
+    padding: 20px 0 0 0;
+}
+.middleRow{
+    display: inline-block;
+    width: 100%;
+    padding: 50px 100px 100px 100px;
+}
+.bContainer{
+    text-align: center;
+    float: left;
+    width: 600px;
+}
+.bHeading{
+    font-family: itim;
+    font-size: 30px;
+}
+.eContainer{
+    text-align: center;
+    float: right;
+    width: 600px;
+}
+.eHeading{
+    font-family: itim;
+    font-size: 30px;
+}
+.eVid{
+    text-align: center;
+    padding: 0 0 50px 0;
+}
+
+/*--How to Join Us--*/
+.htjContainer{
+    padding: 50px 0 100px 0;
+}
+.htjHeading{
+    text-align: center;
+    font-family: caveatBrush;
+    font-size: 50px;
+}
+.htjContent{
+    padding: 50px 0 50px 100px;
+}
+.htjSubHeading{
+    font-family: itim;
+    font-size: 30px;
+}
+.htjSubContent{
+    font-size: 20px;
+    padding: 0 0 10px 20px;
+    width: 60%;
+}
+.htjContent a{
+    text-decoration: underline;
+    color: #2e3131;
+    transition: all 0.3s ease;
+}
+.htjContent a:hover{
+    color: #5b5e5e;
+    transition: all 0.3s ease;
+}
