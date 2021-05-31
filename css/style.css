@@ -1,8 +1,8 @@
 /*--FONTS--*/
-@font-face { font-family: Rock Salt; src: url(/fonts/RockSalt-Regular.ttf);}
-@font-face { font-family: Itim; src: url(/fonts/Itim-Regular.ttf);}
-@font-face { font-family: CaveatBrush; src: url(/fonts/CaveatBrush-Regular.ttf);}
-@font-face { font-family: ComicNeue; src: url(/fonts/ComicNeue-Bold.ttf);}
+@font-face { font-family: Rock Salt; src: url(/fonts/RockSalt-Regular.ttf);font-display: swap;}
+@font-face { font-family: Itim; src: url(/fonts/Itim-Regular.ttf);font-display: swap;}
+@font-face { font-family: CaveatBrush; src: url(/fonts/CaveatBrush-Regular.ttf);font-display: swap;}
+@font-face { font-family: ComicNeue; src: url(/fonts/ComicNeue-Bold.ttf);font-display: swap;}
 
 
 * {
