@@ -1,13 +1,9 @@
 /*--FONTS--*/
-@font-face { font-family: neutronium; src: url(/fonts/Neutronium.ttf);}
-@font-face { font-family: divlit; src: url(/fonts/divlit.ttf);}
-@font-face { font-family: NeverSayDie; src: url(/fonts/NEVERSAYDIE.ttf);}
-@font-face { font-family: PerfectDark; src: url(/fonts/pdark.ttf);}
-@font-face { font-family: neutropolitical; src: url(/fonts/neuropolitical\ rg.ttf);}
 @font-face { font-family: Rock Salt; src: url(/fonts/RockSalt-Regular.ttf);}
 @font-face { font-family: Itim; src: url(/fonts/Itim-Regular.ttf);}
 @font-face { font-family: CaveatBrush; src: url(/fonts/CaveatBrush-Regular.ttf);}
 @font-face { font-family: ComicNeue; src: url(/fonts/ComicNeue-Bold.ttf);}
+
 
 * {
 	margin: 0;
@@ -17,9 +13,41 @@
 	color: #668fff;
 	background: transparent;
 }
-p,h1{
-	font-family: ComicNeue;
-	font-size: 18px;
+p,h1,li{
+	font-family: 'Open Sans Condensed';
+	font-weight: 400;
+	font-size: 23px;
+}
+
+span a{
+	text-decoration: none;
+	color: #668fff;
+	transition: all 0.3s ease;
+}
+span a:hover{
+	text-decoration: underline;
+	color: #668fff;
+	transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar{
+	width : 10px;
+}
+
+::-webkit-scrollbar-track{
+	border:5px solid #343a40;
+	box-shadow: inset 0 0 0px 0px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb{
+	background:linear-gradient(
+		45deg,
+		/* #3c416d, */
+		#dababa,
+		#9192c9,
+		#95a4ba
+	);
+	border-radius: 3px;
 }
 
 /*--Navbar--*/
@@ -52,7 +80,7 @@ p,h1{
 .navbar-nav li a {
 	float: right;
 	text-align: left;
-	font-size: 20px;
+	font-size: 22px;
 }
 
 /* #nav-bar ul li a:hover {
@@ -68,7 +96,7 @@ p,h1{
 }
 
 .nav-link {
-	color: #555 !important;
+	color: #fff !important;
 	font-weight: 350;
 	font-size: 16px;
 }
@@ -107,7 +135,7 @@ p,h1{
 .footer-dark {
 	padding: 50px 0;
 	color: #f0f9ff;
-	background-color: #282d32;
+	background-color: #343a40; /*282d32*/
 }
 
 .footer-dark h3 {

@@ -1,8 +1,13 @@
+.highlight{
+    text-decoration: underline;
+    font-weight: bold;
+}
 .vHeading{
     text-align: center;
     font-size: 40px;
     font-family: rock salt;
     padding: 50px 0 40px 0;
+    /* color: #00b2ff; */
 }
 
 /*--Reason--*/
@@ -13,7 +18,10 @@
 }
 .reason{
     float: left;
-    width: 60%;
+    width: 55%;
+}
+.rContent{
+    padding: 20px 0 0 0;
 }
 .rHeading{
     font-family: itim;
