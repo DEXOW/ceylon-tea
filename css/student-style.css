@@ -1,0 +1,258 @@
+/*--Main Heading--*/
+body{
+    background: linear-gradient(
+        180deg,
+        #6C9EDF/*#9800FF*/,
+        #fff
+    );
+}
+
+.main{
+    position: relative; 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.main::before {    
+    content: "";
+    background-attachment: fixed;
+    background-image: url('/img/englishBg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    position: absolute;
+    width: 80%;
+    height: 40%;
+    opacity: 0.5;
+    filter: blur(5px);
+}
+
+.main .heading{
+    position: relative;  
+    font-size: 50px;
+    font-family: 'rock salt';
+    font-weight: 1000;
+    /* padding: 100px 0 100px 0; */
+    z-index: 10;
+    margin: 0;
+    text-align: center;
+}
+
+/*--Why Join Us--*/
+.wju{
+    padding: 100px 100px 50px;
+    text-align: center;
+}
+.wju .heading{
+    font-family: itim;
+    font-size: 30px;
+    padding: 0 0 20px 0;
+}
+
+/*--Student Information--*/
+.si{
+    padding: 50px 100px 200px;
+    display: inline-block;
+    width: 100%;
+}
+
+.benifits .heading, .eligible .heading{
+    font-family: itim;
+    font-size: 30px;
+    text-align: center;
+    padding: 30px 0;
+}
+.benifits , .eligible{
+    width: 45%;
+}
+.benifits{
+    float: left;
+}
+.eligible{
+    float: right;
+}
+.eligible .vidFrame{
+    display: block;
+    position: absolute;
+    top: 1200px;
+}
+.eligible .vidFrame img{
+    display: block;
+    position: absolute;
+    width: 520px;
+    height: 265px;
+    z-index: 1;
+}
+.eligible .vidFrame video{
+    display: block;
+    position: absolute;
+    width: 400px;
+    z-index: 1;
+    top: 13px;
+    left: 60px;
+    border-radius: 2px;
+}
+/* .eligible .vidFrame img{
+    width: 700px;
+    height: 350px;
+    position: absolute;
+    right: 50px;
+    top: 1100px;
+    z-index: 1;
+}
+.eligible video{
+    position: absolute;
+    width: 550px;
+    text-align: center;
+    right: 130px;
+    top: 1060px;
+    padding: 50px 0;
+} */
+.benifits .content ol, .eligible .content ol{
+    padding: 0 0 0 20px;
+}
+
+.banner {
+    width: 100%;
+    padding: 0 10%;
+}
+.banner a{
+    display: block;
+}
+.banner .heading{
+    padding: 30px;
+    font-size: 35px;
+    font-weight: 1000;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 100px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.banner a:hover{
+    text-decoration: none;
+}
+.banner .heading:hover{
+    transform: scale(1.03);
+    box-shadow: 0px 0px 70px rgba(0,0,0,0.5);
+    transition: all 0.3s ease;
+}
+
+/*--How To Join Us--*/
+.htj{
+    width: 100%;
+    padding: 100px 0 200px 0;
+}
+.htj .heading{
+    font-size: 60px;
+    font-weight: 100;
+    font-family: caveatbrush;
+    text-align: center;
+    padding: 50px 0;
+}
+.htj .content{
+    transform: translate(20%,0);
+    width: 80%;
+}
+.htj .content .desc{
+    padding: 10px 0 20px 10px;
+}
+
+/*--Mobile View--*/
+@media (max-width:1300px){
+    .eligible .vidFrame{
+        position: relative;
+        top: auto;
+    }
+    .eligible .vidFrame img{
+        display: none;
+    }
+    .eligible .vidFrame video{
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 100%;
+        text-align: center;
+        padding: 50px 20px;
+    }
+}
+@media (max-width:1200px){
+    .banner .heading{
+        font-size: 30px;
+    }
+    .benifits , .eligible{
+        width: 100%;
+        float: none;
+        padding: 50px 100px;
+    }
+    .benifits .heading, .eligible .heading{
+        font-size: 40px;
+    }
+    .eligible video{
+        width: 100%;
+        text-align: center;
+        padding: 50px 80px;
+    }
+    
+    .si{
+        padding: 50px 100px 100px;
+    }
+}
+@media (max-width:991px){
+    .wju{
+        padding: 50px 100px 50px;
+    }
+    .si{
+        padding: 50px 50px 50px;
+        display: inline-block;
+        width: 100%;
+    }
+    .eligible video{
+        width: 100%;
+        text-align: center;
+        padding: 50px 50px;
+    }
+    .benifits , .eligible{
+        padding: 50px 50px;
+    }
+    .banner .heading{
+        font-size: 20px;
+    }
+}
+@media (max-width:620px){
+    .main .heading {
+        font-size: 30px;
+    }
+    .banner .heading{
+        font-size: 15px;
+    }
+    .eligible video{
+        padding: 50px 10px;
+    }
+    .benifits , .eligible{
+        padding: 50px 30px;
+    }
+}
+@media (max-width:426px){
+    .wju{
+        padding: 30px 10px;
+    }
+    .main .heading {
+        font-size: 25px;
+    }
+    .eligible video{
+        padding: 50px 0;
+    }
+    .benifits , .eligible{
+        padding: 20px 10px;
+    }
+    .si{
+        padding: 20px 20px 50px;
+    }
+    .htj .heading{
+        font-size: 40px;
+    }
+}

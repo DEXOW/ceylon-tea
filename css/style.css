@@ -1,0 +1,243 @@
+/*--FONTS--*/
+@font-face { font-family: Rock Salt; src: url(/fonts/RockSalt-Regular.ttf);font-display: swap;}
+@font-face { font-family: Itim; src: url(/fonts/Itim-Regular.ttf);font-display: swap;}
+@font-face { font-family: CaveatBrush; src: url(/fonts/CaveatBrush-Regular.ttf);font-display: swap;}
+@font-face { font-family: ComicNeue; src: url(/fonts/ComicNeue-Bold.ttf);font-display: swap;}
+
+/*--GLOBAL SETTINGS--*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+p,h1,h2,h3,li{
+    font-family: 'Open Sans Condensed';
+    font-weight: 600;
+    font-size: 23px;
+}
+
+::selection{
+    color: #668fff;
+    background: transparent;
+}
+.highlight{
+    text-decoration: underline;
+    font-weight: 1000;
+}
+
+.divider{
+	padding: 5px 0 5px 5%;
+}
+.divider img{
+	width: 95%;
+	height: 3px;
+}
+span a{
+	text-decoration: none;
+	color: #668fff;
+	transition: all 0.3s ease;
+}
+span a:hover{
+	text-decoration: underline;
+	color: #668fff;
+	transition: all 0.3s ease;
+}
+
+/*--NAVBAR--*/
+#nav-bar {
+	position: sticky;
+	top: 0;
+	z-index: 99999;
+	font-family: itim;
+}
+/* .navbar{
+    background: linear-gradient(
+        135deg,
+		#6C9EDF,
+		#ffffff
+    );
+} */
+.navbar-nav.navbar-center {
+    position: relative;
+    left: 45%;
+    transform: translatex(-45%);
+}
+.navbar-brand {
+	display: block;
+	position: relative;
+	left: 50px;
+	color: #2e3131;
+	font-family: 'rock salt', cursive;
+    font-weight: 1000;
+}
+.navbar-brand img {
+	position: relative;
+	float: left;
+	height: 70px;
+	padding: 8px;
+}
+.navbar-nav li {
+	padding: 10px 10px;
+}
+.navbar-nav li a {
+	float: none;
+	text-align: center;
+	font-size: 22px;
+    width: 120px;
+    height: 50px;
+    /* background-color: #6200ee; */
+    border-radius: 1.5rem;
+    transition: background 0.5s ease;
+}
+.navbar-nav li a:hover{
+    background-color: #6D4FB0;/*#6200ee*/
+    transition: all 0.5s ease;
+}
+.navbar-toggler {
+	border: none!important;
+}
+.nav-link {
+	color: #fff!important;
+	font-weight: 350;
+	font-size: 16px;
+    transition: all 0.5s ease;
+}
+.nav-item {
+	transition: all 0.5s ease;
+}
+.nav-item:hover {
+	transition: all 0.5s ease;
+}
+.nav-link:hover {
+    transition: all 0.5s ease;
+    color: #000!important;
+}
+.donate , .donate:hover{
+    background-color: #746cdf!important;
+    color: #fff!important;
+}
+.active-link{
+    border-width: 2px;
+	border-style: solid;
+	border-color: #6D4FB0;	
+}
+.active-link:hover{
+	background: none!important;
+	color: #fff!important;
+}
+
+/*--FOOTER--*/
+.footer {
+	width: 100%;
+}
+
+.footer-dark {
+	padding: 30px 0;
+	color: #f0f9ff;
+	background-color: #343a40; /*282d32*/
+}
+
+.footer-dark h3 {
+	margin-top: 0;
+	margin-bottom: 12px;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+@media (max-width:767px) {
+	.footer-dark .item:not(.social) {
+		text-align: center;
+		padding-bottom: 20px;
+	}
+}
+
+.footer-dark .item.text {
+	margin-bottom: 36px;
+}
+
+@media (max-width:767px) {
+	.footer-dark .item.text {
+		margin-bottom: 0;
+	}
+}
+
+.footer-dark .item.text p {
+	opacity: 0.6;
+	margin-bottom: 0;
+}
+
+.footer-dark .item.social {
+	text-align: center;
+}
+
+@media (max-width:991px) {
+	.footer-dark .item.social {
+		text-align: center;
+		margin-top: 20px;
+	}
+}
+
+.footer-dark .item.social>a {
+	font-size: 20px;
+	width: 36px;
+	height: 36px;
+	line-height: 36px;
+	display: inline-block;
+	text-align: center;
+	border-radius: 50%;
+	box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+	margin: 0 8px;
+	color: #fff;
+	opacity: 0.75;
+	transition: all 0.3s ease;
+}
+.footer-dark .item.social>.instagram:hover{
+	color: #E1306C;
+	transition: all 0.3s ease;
+	transform: scale(1.2);
+}
+.footer-dark .item.social>.twitter:hover{
+	color: #1DA1F2;
+	transition: all 0.3s ease;
+	transform: scale(1.2);
+}
+.footer-dark .item.social>.mail:hover{
+	color: #EA4335;
+	transition: all 0.3s ease;
+	transform: scale(1.2);
+}
+.footer-dark .item.social>.discord:hover{
+	color: #7289da;
+	transition: all 0.3s ease;
+	transform: scale(1.2);
+}
+.footer-dark .item.social>.facebook:hover{
+	color: #4968ac;
+	transition: all 0.3s ease;
+	transform: scale(1.2);
+}
+
+.footer-dark .copyright {
+	text-align: center;
+	padding-top: 24px;
+	opacity: 0.3;
+	font-size: 13px;
+	font-weight: 100;
+	margin-bottom: 0;
+}
+.footer-dark .copyright span{
+	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;;
+}
+
+
+/*--Mobile View--*/
+@media (max-width:420px){
+    p,h1,h2,h3,li{
+		font-family: 'Open Sans Condensed';
+		font-weight: 600;
+		font-size: 19px;
+	}
+	.heading{
+		font-size: 20px;
+	}
+}
