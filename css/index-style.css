@@ -1,243 +1,26 @@
-body{
-    background: linear-gradient(
-        180deg,
-        #B5A2C8,
-        #fff
-    );
+/* .heading{
+    position: relative;
+    padding-top: 50px;
 }
-/*--Slider--*/
-.carousel .carousel-item {
-    height: 670px;
-}
-  
-.carousel-item img {
+.heading::before{
+    content: '';
     position: absolute;
-    object-fit:cover;
-    top: 0;
-    left: 0;
-    min-height: 670px;
+    height: 70vh;
+    width: 92vw;
+    background: linear-gradient(rgb(255, 255, 255),rgba(255, 255, 255, 0.512),rgba(32, 32, 32, 0.49)) ,url('/img/landing2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    border-radius: 20px;
 }
-.carousel-caption{
-    top: 50%;
-    transform: translateY(-50%);
-    bottom: initial!important;
-    font-family: 'caveatbrush';
-    font-size: 80px;
-    color: #fff!important;
-    
+.heading h1.title{
+    font-size: 2.5rem;
+    font-family: 'Lobster';
+    text-align: center;
+    padding-top: 5%;
 }
-.carousel-caption .engsl{
-    font-family: 'rock salt';
-    font-size: 50px;
-    font-weight: 600;
-    /* color: #000!important; */
-}
-.carousel-caption .slogan{
-    margin: 30px 0 0 0;
-    font-style: italic;
-    font-size: 40px;
-    color: #282d32;
-    margin: 200px 0 0 800px;
-}
-/* .slider{
-    background-color: #C8A2C8;
-    padding: 13px 9px;
+@media (max-width: 426px){
+    .heading{
+        display: none;
+    }
 } */
-
-
-/*--Mission & Vision Container--*/
-.mvContainer{
-    display: inline-block;
-    padding: 100px 50px 100px;
-}
-.mvContainer .mission{
-    text-align: center;
-    float: left;
-    width: 50%;
-    /* padding: 0 0 10px 0; */
-}
-.mvContainer .vision{
-    text-align: center;
-    float: right;
-    width: 50%;
-    padding: 0 0 0 50px;
-}
-.mvContainer .mission .heading , .mvContainer .vision .heading{
-    font-family: itim;
-    font-size: 30px;
-}
-.mvContainer .description{
-    font-family: comicNeue;
-    font-weight: 100;
-}
-
-
-
-/*--Work--*/
-.workContainer{
-    padding: 10px;
-    /* background: linear-gradient(
-        180deg,
-        #C8A2C8,
-        #fff
-    ); */
-}
-.whatWeDo , .howWeDo{
-    display: inline-block;
-    padding: 100px 80px 50px 80px;
-}
-.whatWeDo .heading,.howWeDo .heading{
-    text-align: center;
-    font-size: 50px;
-    font-family: itim;
-}
-
-.whatWeDo .content{
-    float: left;
-    width: 50%;
-}
-.whatWeDo video{
-    float: right;
-    padding: 80px 10px 50px;
-}
-
-.howWeDo .content{
-    float: right;
-    width: 50%;
-}
-.howWeDo video{
-    float: left;
-    padding: 80px 10px 50px;
-}
-
-/*--Join Us--*/
-.joinContainer{
-    padding: 10px;
-}
-.join{
-    text-align: center;
-    padding: 50px 10px 80px;
-}
-.join .heading{
-    font-size: 40px;
-    font-family: itim;
-}
-.join .content{
-    display: inline-block;
-    padding: 50px 70px;
-}
-.join a{
-    text-decoration: none!important;
-    font-family: 'Open Sans Condensed';
-    font-size: 25px;
-    color: #000;
-}
-.join .jButton{
-    padding: 15px 40px;
-    border-radius: 100px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #a4a4a5;
-    transition: all 0.3s ease;
-}
-.join .jButton:hover{
-    color: #282d32;
-    transform: scale(1.05);
-    /* box-shadow: 0px 0px 70px #3F7EC0; */
-    transition: all 0.3s ease;
-}
-.join .VButton:hover{
-    box-shadow: 0px 0px 70px #9062be;
-    transition: all 0.3s ease;
-}
-.join .SButton:hover{
-    box-shadow: 0px 0px 70px #6C9EDF /*rgba(0,0,0,0.5*/;
-    transition: all 0.3s ease;
-}
-
-/*For More Info(fmi)*/
-.fmi{
-    padding: 10px 10px 50px 50px;
-}
-.fmi .heading{
-    font-size: 30px;
-    font-family: itim;
-}
-.fmi .content{
-    padding: 0 20px;
-}
-
-
-/*--Mobile View--*/
-@media (max-width:1200px){
-    .workContainer{
-        display: block;
-        padding: 0 0 0 10%;
-    }
-    .whatWeDo , .howWeDo{
-        padding: 50px 80px;
-        display: block;
-    }
-    .whatWeDo .content, .howWeDo .content{
-        width: 90%;
-    }
-    .whatWeDo video, .howWeDo video{
-        width: 70%;
-        text-align: center;
-        margin: 0 10%;
-    }
-    .whatWeDo .content, .whatWeDo video, .howWeDo .content, .howWeDo video{
-        float: none;
-    }
-}
-@media (max-width:991px){
-    .carousel .carousel-item {
-        height: 600px;
-    }
-    .carousel-item img {
-        min-height: 600px;
-    } 
-    .whatWeDo video, .howWeDo video{
-        width: 90%;
-        margin: 0 0;
-    }
-    .whatWeDo .content ul, .howWeDo .content ul{
-        margin: 0 0 0 20px;
-    }
-}
-@media (max-width:620px){
-    .carousel .carousel-item {
-        height: 300px;
-    }
-    .carousel-item img {
-        min-height: 300px;
-    }
-    .whatWeDo , .howWeDo{
-        padding: 50px 10px;
-    }
-    .whatWeDo video, .howWeDo video{
-        width: 90%;
-        margin: 0 0;
-    }
-    .join .content{
-        padding: 10px 30px;
-    }
-}
-@media (max-width:420px){
-    .workContainer{
-        padding: 0 0 0 10px;
-    }
-    .whatWeDo .heading,.howWeDo .heading{
-        font-size: 35px;
-    }
-    .whatWeDo video, .howWeDo video{
-        width: 100%;
-        margin: 0 0;
-        padding: 50px 0;
-    }
-    .fmi .heading{
-        font-size: 25px;
-    }
-
-}
-

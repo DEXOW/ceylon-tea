@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+    <section id="nav">
+        <div class="navigation">
+            <div class="logo"><img src="img/logo2.png" alt="logo"></div>
+            <ul>
+                <li class="list">
+                    <b></b>
+                    <b></b>
+                    <a href="/index.html">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="navTitle">Home</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <b></b>
+                    <b></b>
+                    <a href="/ceylon-tea-plantations.html">
+                        <span class="icon"><ion-icon name="location-outline"></ion-icon></span>
+                        <span class="navTitle">Ceylon Tea Plantations</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <b></b>
+                    <b></b>
+                    <a href="/ceylon-tea-muesum.html">
+                        <span class="icon"><ion-icon name="cafe-outline"></ion-icon></span>
+                        <span class="navTitle">Ceylon Tea Museum</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <b></b>
+                    <b></b>
+                    <a href="/by-products-of-tea.html">
+                        <span class="icon"><ion-icon name="leaf-outline"></ion-icon></span>
+                        <span class="navTitle">By Products of Tea</span>
+                    </a>
+                </li>
+                <li class="list active">
+                    <b></b>
+                    <b></b>
+                    <a href="">
+                        <span class="icon"><ion-icon name="pricetags-outline" navTitle="Tea Sales"></ion-icon></span>
+                        <span class="navTitle">Tea Sales</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <b></b>
+                    <b></b>
+                    <a href="/shop.html">
+                        <span class="icon"><ion-icon name="storefront-outline"></ion-icon></span>
+                        <span class="navTitle">Shop</span>
+                    </a>
+                </li>
+                <!-- <li class="list">
+                    <b></b>
+                    <b></b>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                        <span class="navTitle">Sign Out</span>
+                    </a>
+                </li> -->
+            </ul>
+            <div class="toggle">
+                <ion-icon name="menu-outline" class="open"></ion-icon>
+                <ion-icon name="close-outline" class="close"></ion-icon>
+            </div>
+        </div>
+    </section>
+    <!-- Page Contents -->
+    <section id="page-content">
+        <div class="heading">
+            <h1 class="title">Ceylon Tea</h1>
+            <!-- <div class="landing-img"><img src="/img/landing.jpg"></div> -->
+        </div>
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        let menuToggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        let navTitles = document.querySelectorAll('.navTitle');
+        let pageContent = document.getElementById('page-content');
+        menuToggle.onclick = function(){
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+            if(navigation.classList.contains('active')){
+                navTitles.forEach(navTitle => {
+                    navTitle.style.display = 'block';
+                });
+                pageContent.style.transform = 'translateX(220px)';
+            }else{
+                navTitles.forEach(navTitle => {
+                    navTitle.style.display = 'none';
+                });
+                pageContent.style.transform = 'translateX(0px)';
+            }
+        }
+    </script>
+</body>
+</html>
