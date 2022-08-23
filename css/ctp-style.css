@@ -33,6 +33,7 @@
 .tea-plantations .frame img{
     width: 90%;
     height: auto;
+    margin-bottom: 10px;
 }
 .tea-plantations .frame .left{
     display: flex;
@@ -63,6 +64,20 @@
     width: 100%;
     height: 250px;
 }
+
+
+/* Table of Contents*/
+
+.table-of-contents{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    width: 90%;
+}
+
 @media (min-width:1201px){
     .tea-plantations .frame:nth-of-type(even){
         grid-template-columns: auto 400px;

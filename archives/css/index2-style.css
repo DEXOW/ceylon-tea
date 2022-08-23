@@ -1,7 +1,40 @@
-.banner::before{
-    background: linear-gradient(rgb(255, 255, 255),rgba(255, 255, 255, 0.512),rgba(32, 32, 32, 0.49)) ,url('/img/landing2.jpg');
+p{
+    font-family: 'Dosis', sans-serif;
+}
+h3{
+    font-family: Gidolinya;
+    font-size: 25px;
+}
+a{
+    color: #000;
+    text-decoration: none;
 }
 
+/* Ceylon Tea heading Banner */
+.banner{
+    position: relative;
+    margin-top: 50px;
+    height: 250px;
+}
+.banner::before{
+    content: '';
+    position: absolute;
+    height: inherit;
+    width: 100%;
+    background: linear-gradient(rgb(255, 255, 255),rgba(255, 255, 255, 0.512),rgba(32, 32, 32, 0.49)) ,url('/img/landing2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    z-index: -1;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.banner h1.title{
+    font-size: 2.5rem;
+    font-family: 'Lobster';
+    text-align: center;
+    padding-top: 50px;
+}
 
 /* About Ceylon Tea */
 .about{
@@ -32,9 +65,6 @@
     margin-bottom: 20px;
     width: 90%;
 }
-.tea-validation .top img{
-    margin-left: 50px;
-}
 .tea-validation h3{
     font-family: Gidolinya;
     margin-bottom: 20px;
@@ -50,6 +80,7 @@
 
 /* Ceylon Tea History */
 .tea-history{
+    /* position: relative; */
     display: flex;
     flex-direction: column;
     margin-left: auto;
@@ -139,8 +170,68 @@
     padding-bottom: 20px;
 }
 
+/* Footer */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    background-color: #007a78ac;
+    border-radius: 20px;
+}
+footer .content .copyrights{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Dosis', sans-serif;
+}
+footer .content{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 15px;
+}
+footer .content .docs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+footer .content .docs a{
+    font-family: 'Dosis', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+footer .content .socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+footer .content .socials ion-icon{
+    width: 20px;
+    height: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 0;
+}
 
 @media (max-width: 1020px){
+    h3{
+        font-family: Gidolinya;
+        font-size: 20px;
+    }
+
+    .banner{
+        height: 150px;
+    }
+    .banner h1.title{
+        padding-top: 35px;
+    }
 
     .tea-history img{
         width: 250px;
@@ -164,6 +255,20 @@
     }
     .making-tea .row{
         flex-direction: column;
+    }
+    
+    footer{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    footer .content{
+        width: 90%;
+        grid-template: 1fr 1fr 1fr / 1fr;
+        row-gap: 10px;
+        padding: 10px;
+    }
+    footer .content .socials{
+        grid-area: 1;
     }
 }
 @media (max-width: 350px){

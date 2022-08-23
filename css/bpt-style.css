@@ -1,0 +1,94 @@
+.banner::before{
+    background: linear-gradient(rgb(255, 255, 255),rgba(171, 171, 171, 0.512),rgba(32, 32, 32, 0.49)) ,url('/img/img24.png');
+}
+.desc {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.desc p{
+    text-align: center;
+}
+
+/* By Products */
+.by-products{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    width: 90%;
+}
+.by-products .frame{
+    width: 100%;
+    display: flex;
+    /* flex-direction: row; */
+    margin: 20px 0;
+}
+.by-products .frame:nth-of-type(even){
+    flex-direction: row-reverse;
+}
+
+.by-products .frame img{
+    border-radius: 20px;
+    width: 250px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.by-products .frame .details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    margin: 0 20px;
+}
+.by-products .frame:nth-of-type(even) .details{
+    text-align: right;
+}
+.by-products .frame .details .name{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.by-products .frame .details .description{
+    font-size: 15px;
+    color: #707070;
+    margin-bottom: 10px;
+}
+.by-products .frame .details .purchase-btn{
+    display: flex;
+    width: fit-content;
+    background: #a09e9e99;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+    color: #707070;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background 0.2s ease;
+}
+.by-products .frame:nth-of-type(even) .details .purchase-btn{
+    align-self: flex-end;
+}
+.by-products .frame .details .purchase-btn:hover{
+    background: #68666699;
+    transition: all 0.3s ease;
+}
+
+@media (max-width:768px){
+    .by-products .frame{
+        flex-direction: column!important;
+        align-items: center;
+    }
+    .by-products .frame .details{
+        text-align: center!important;
+        width: 85%;
+    }
+    .by-products .frame .details .purchase-btn{
+        align-self: center!important;
+    }
+}
