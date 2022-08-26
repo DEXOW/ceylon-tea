@@ -306,8 +306,11 @@ footer .content .socials ion-icon{
     }
     .navigation{
         position: relative;
-        overflow: hidden;
+        overflow: scroll;
         transition: all 0.5s ease;
+    }
+    .navigation::-webkit-scrollbar{
+        display: none;
     }
     .menu-btn{
         position: fixed;
