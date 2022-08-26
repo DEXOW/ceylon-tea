@@ -1,0 +1,75 @@
+.banner::before{
+    background: linear-gradient(rgb(255, 255, 255),rgba(171, 171, 171, 0.512),rgba(32, 32, 32, 0.49)) ,url('/img/landing6.jpg');
+    background-position: center!important;
+}
+.desc {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.desc p{
+    text-align: center;
+}
+
+/* Items */
+.products{
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 20px;
+    /* border: 1px solid #373737d1; */
+}
+.products .item{
+    max-width: 250px;
+    border: 5px solid #373737d1;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    margin: 20px 10px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.products .item:hover{
+    box-shadow: 0 0 10px #5d5d5d;
+    transform: scale(1.03);
+    transition: all 0.3s ease;
+
+}
+.products .item img{
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+}
+.products .item .details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px 10px;
+}
+.products .item .details p.name{
+    font-size: 17px;
+}
+.products .item .details p.price{
+    font-weight: 600;
+    font-size: 20px;
+}
+.products .item .buttons{
+    margin: 30px 0 10px;
+}
+.products .item .buttons a{
+    border-radius: 7px;
+    background-color: #898989d1;
+    font-size: 13px;
+    padding: 10px 15px;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+}
+.products .item .buttons a:hover{
+    background-color: #6c6c6c;
+    transition: all 0.3s ease;
+}

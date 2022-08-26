@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ceylon Tea | Shop</title>
+    <base href="/">
     
     <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
@@ -17,7 +18,6 @@
     <meta name="msapplication-TileColor" content="#00827f">
     <meta name="msapplication-config" content="/favicons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-    <base href="/">
 
     <!--Links-->
     <link rel="stylesheet" href="/css/shop-style.css">
@@ -68,16 +68,33 @@
                                 <span class="navTitle">Benefits of Tea</span>
                             </a>
                         </li> -->
-                        <li class="list">
-                            <a href="/tea-sales.html">
-                                <span class="icon"><ion-icon name="pricetags-outline"></ion-icon></span>
-                                <span class="navTitle">Tea Sales</span>
-                            </a>
+                        <input type="checkbox" id="sub-check">
+                        <li class="list tea-sales">
+                            <label for="sub-check">
+                                <a>
+                                    <span class="icon"><ion-icon name="pricetags-outline"></ion-icon></span>
+                                    <span class="navTitle">Tea Sales</span>
+                                </a>
+                            </label>
+                            <ul class="sub-menu">
+                                <li class="list">
+                                    <a href="/tea-sales.html">
+                                        <span class="icon"><ion-icon name="chevron-forward-outline"></ion-icon></span>
+                                        <span class="navTitle">Tea Sales 1</span>
+                                    </a>
+                                </li>
+                                <li class="list">
+                                    <a href="/tea-sales2.html">
+                                        <span class="icon"><ion-icon name="chevron-forward-outline"></ion-icon></span>
+                                        <span class="navTitle">Tea Sales 2</span>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="list active">
                             <a href="/shop.html">
                                 <span class="icon"><ion-icon name="storefront-outline"></ion-icon></span>
-                                <span class="navTitle">Shop</span>
+                                <span class="navTitle">Shop & Donate</span>
                             </a>
                         </li>
                     </ul>
@@ -88,65 +105,126 @@
 
     <!-- Page Contents -->
     <section id="page-content">
-        <div class="banner">
-            <h1 class="title">Shop</h1>
+        <header>
+            <div class="banner">
+                <h1 class="title">Shop & Donate</h1>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="desc">
+                <p>
+                    Any purchase or donation made here will contribute to supporting the improvement of the Ceylon Tea Industry and preserving its remarkable history. 
+                    This goal will be reached through various ways such as supporting the families of the local tea pluckers, purchasing new and improved machinery needed for the production of Ceylon Tea, and by performing renovations and maintaining our historical locations and machinery related to the Ceylon Tea industry.
+                </p>
+            </div>
+        </div>
+        <!-- <div class="donate">
+            <a href="#" class="donate-btn">Donate</a>
+        </div> -->
+
+        <input type="radio" name="shop-btns" id="product-check" checked>
+        <input type="radio" name="shop-btns" id="donate-check">
+        <div class="shop-buttons">
+            <label for="product-check">
+                <div class="product-btn">Products</div>
+            </label>
+            <label for="donate-check">
+                <div class="donate-btn">Donate</div>
+            </label>
         </div>
         
+        <div class="container donate-container">
+            <div class="donate">
+                <div class="donate-form">
+                    <form>
+                        <h3>Donation</h3>
+                        <div class="name">
+                            <div class="field">
+                                <input type="text" name="fname" id="fname" placeholder="John">
+                                <label for="fname">First Name</label>
+                            </div>
+                            <div class="field">
+                                <input type="text" name="lname" id="lname" placeholder="Doe">
+                                <label for="lname">Last Name</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="email" name="mail" id="email" placeholder="john.doe@gmail.com">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="field amount">
+                            <input type="number" name="amount" id="amt-custom" placeholder="1000">
+                            <label for="amt-custom">Amount (in LKR)</label>
+                        </div>
+                        <div class="button">
+                            <input type="submit" name="donate" id="submit-btn" value="DONATE">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="donate-links">
+                    <h3>Other Donations</h3>
+                    <a href="https://tealeaftrust.com/donate/" class="link">Tea Leaf Trust</a>
+                    <a href="" class="link">Tea Sri Lanka</a>
+                </div>
+            </div>
+        </div>
         <div class="container prod-container">
             <div class="products">
                 <div class="item">
                     <div class="img-container">
-                        <img src="/img/products/1RED_0749.webp" alt="">
+                        <img src="/img/products/1RED_0749(1).webp" alt="">
                     </div>
                     <div class="details">
                         <p class="price">LKR 530</p>
                         <p class="name">Wooden Elephant (Attonia)</p>
                     </div>
                     <div class="buttons">
-                        <a href="" class="cart-btn">ADD TO CART</a>
-                        <a href="" class="buy-btn">BUY</a>
+                        <a href="#" class="cart-btn">ADD TO CART</a>
+                        <a href="#" class="buy-btn">BUY</a>
                     </div>
                 </div>
 
                 <div class="item">
                     <div class="img-container">
-                        <img src="/img/products/1RED_0701.webp" alt="">
+                        <img src="/img/products/1RED_0701(1).webp" alt="">
                     </div>
                     <div class="details">
                         <p class="price">LKR 1,490</p>
                         <p class="name">Wooden Elephant (Attonia)</p>
                     </div>
                     <div class="buttons">
-                        <a href="" class="cart-btn">ADD TO CART</a>
-                        <a href="" class="buy-btn">BUY</a>
+                        <a href="#" class="cart-btn">ADD TO CART</a>
+                        <a href="#" class="buy-btn">BUY</a>
                     </div>
                 </div>
 
                 <div class="item">
                     <div class="img-container">
-                        <img src="/img/products/1RED_0716.webp" alt="">
+                        <img src="/img/products/1RED_0716(1).webp" alt="">
                     </div>
                     <div class="details">
                         <p class="price">LKR 700</p>
                         <p class="name">Wooden Elephant (Colon)</p>
                     </div>
                     <div class="buttons">
-                        <a href="" class="cart-btn">ADD TO CART</a>
-                        <a href="" class="buy-btn">BUY</a>
+                        <a href="#" class="cart-btn">ADD TO CART</a>
+                        <a href="#" class="buy-btn">BUY</a>
                     </div>
                 </div>
 
                 <div class="item">
                     <div class="img-container">
-                        <img src="/img/products/1RED_0713.webp" alt="">
+                        <img src="/img/products/1RED_0713(1).webp" alt="">
                     </div>
                     <div class="details">
                         <p class="price">LKR 700</p>
                         <p class="name">Wooden Elephant (Colon)</p>
                     </div>
                     <div class="buttons">
-                        <a href="" class="cart-btn">ADD TO CART</a>
-                        <a href="" class="buy-btn">BUY</a>
+                        <a href="#" class="cart-btn">ADD TO CART</a>
+                        <a href="#" class="buy-btn">BUY</a>
                     </div>
                 </div>
 
@@ -159,8 +237,8 @@
                         <p class="name">Traditional Mask (Gini)</p>
                     </div>
                     <div class="buttons">
-                        <a href="" class="cart-btn">ADD TO CART</a>
-                        <a href="" class="buy-btn">BUY</a>
+                        <a href="#" class="cart-btn">ADD TO CART</a>
+                        <a href="#" class="buy-btn">BUY</a>
                     </div>
                 </div>
 
@@ -173,8 +251,8 @@
                         <p class="name">Traditional Mask (Naga Raksha)</p>
                     </div>
                     <div class="buttons">
-                        <a href="" class="cart-btn">ADD TO CART</a>
-                        <a href="" class="buy-btn">BUY</a>
+                        <a href="#" class="cart-btn">ADD TO CART</a>
+                        <a href="#" class="buy-btn">BUY</a>
                     </div>
                 </div>
 
@@ -187,8 +265,8 @@
                         <p class="name">Traditional Mask (Gurula)</p>
                     </div>
                     <div class="buttons">
-                        <a href="" class="cart-btn">ADD TO CART</a>
-                        <a href="" class="buy-btn">BUY</a>
+                        <a href="#" class="cart-btn">ADD TO CART</a>
+                        <a href="#" class="buy-btn">BUY</a>
                     </div>
                 </div>
 
@@ -201,8 +279,8 @@
                         <p class="name">Traditional Mask (Dala Gara)</p>
                     </div>
                     <div class="buttons">
-                        <a href="" class="cart-btn">ADD TO CART</a>
-                        <a href="" class="buy-btn">BUY</a>
+                        <a href="#" class="cart-btn">ADD TO CART</a>
+                        <a href="#" class="buy-btn">BUY</a>
                     </div>
                 </div>
                 

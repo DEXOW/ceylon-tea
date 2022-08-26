@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ceylon Tea | By Products of Tea</title>
+    <base href="/">
     
     <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
@@ -17,7 +18,6 @@
     <meta name="msapplication-TileColor" content="#00827f">
     <meta name="msapplication-config" content="/favicons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-    <base href="/">
 
     <!--Links-->
     <link rel="stylesheet" href="/css/bpt-style.css">
@@ -68,16 +68,33 @@
                                 <span class="navTitle">Benefits of Tea</span>
                             </a>
                         </li> -->
-                        <li class="list">
-                            <a href="/tea-sales.html">
-                                <span class="icon"><ion-icon name="pricetags-outline"></ion-icon></span>
-                                <span class="navTitle">Tea Sales</span>
-                            </a>
+                        <input type="checkbox" id="sub-check">
+                        <li class="list tea-sales">
+                            <label for="sub-check">
+                                <a>
+                                    <span class="icon"><ion-icon name="pricetags-outline"></ion-icon></span>
+                                    <span class="navTitle">Tea Sales</span>
+                                </a>
+                            </label>
+                            <ul class="sub-menu">
+                                <li class="list">
+                                    <a href="/tea-sales.html">
+                                        <span class="icon"><ion-icon name="chevron-forward-outline"></ion-icon></span>
+                                        <span class="navTitle">Tea Sales 1</span>
+                                    </a>
+                                </li>
+                                <li class="list">
+                                    <a href="/tea-sales2.html">
+                                        <span class="icon"><ion-icon name="chevron-forward-outline"></ion-icon></span>
+                                        <span class="navTitle">Tea Sales 2</span>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="list">
                             <a href="/shop.html">
                                 <span class="icon"><ion-icon name="storefront-outline"></ion-icon></span>
-                                <span class="navTitle">Shop</span>
+                                <span class="navTitle">Shop & Donate</span>
                             </a>
                         </li>
                     </ul>
@@ -88,18 +105,20 @@
 
     <!-- Page Contents -->
     <section id="page-content">
-        <div class="banner">
-            <h1 class="title">By Products of Tea</h1>
-        </div>
+        <header>
+            <div class="banner">
+                <h1 class="title">By Products of Tea</h1>
+            </div>
+        </header>
         <div class="container">
             <div class="by-products">
                 <div class="frame">
                     <div class="side1">
-                        <img src="/img/bpt1.jpg" alt="By Product 1">
+                        <img src="/img/skincare-product.jpg" alt="By Product 1">
                     </div>
                     <div class="details">
                         <h3 class="name">Skincare Products</h3>
-                        <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla. Enim nec dui nunc mattis enim ut tellus.</div>
+                        <div class="description">Known for its anti-aging, soothing, and antioxidant properties, green tea is popping up in more and more beauty products, including in wrinkle-reducing eye creams, face washes, and sunscreens. Green tea can be useful to our skin in many way such as protecting the skin from pollution and UV radiation, minimizes signs of aging by reducing the signs of sun damage, such as hyperpigmentation, rough texture, and fine lines. It also helps to remove excess sebum which makes the ingredient suitable for patients suffering from acne and those with oily complexions, and </div>
                         <div class="purchase-btn">
                             <a class="btn" href="/shop.html">Purchase</a>
                         </div>
@@ -107,11 +126,11 @@
                 </div>
                 <div class="frame">
                     <div class="side1">
-                        <img src="/img/bpt1.jpg" alt="By Product 1">
+                        <img src="/img/tea-detergeant.jpg" alt="By Product 1">
                     </div>
                     <div class="details">
-                        <h3 class="name">Skincare Products</h3>
-                        <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla. Enim nec dui nunc mattis enim ut tellus.</div>
+                        <h3 class="name">Tea Detergent</h3>
+                        <div class="description">Oolong tea extract has been developed as one of the effective substitutes for (CFC) chlorofluoro carbon used to wash away oil on chips used in display-coated liquid crystals. The advantages of oolong tea extract as a detergent are it is an organic material and therefore ecofriendly and the wastewater is easily disposed of, it is a safe detergent that is non-toxic and non-inflammable and the extract forms a high-quality detergent for washing oily substances.</div>
                         <div class="purchase-btn">
                             <a class="btn" href="/shop.html">Purchase</a>
                         </div>
@@ -119,11 +138,11 @@
                 </div>
                 <div class="frame">
                     <div class="side1">
-                        <img src="/img/bpt1.jpg" alt="By Product 1">
+                        <img src="/img/tea-seed-oil.jpg" alt="By Product 1">
                     </div>
                     <div class="details">
-                        <h3 class="name">Skincare Products</h3>
-                        <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla. Enim nec dui nunc mattis enim ut tellus.</div>
+                        <h3 class="name">Tea Seed Oil</h3>
+                        <div class="description">Tea seeds are used as a source of supplementary protein and edible oil for human consumption, apart from many other industrial applications. The prospects of tea seed oil are immense. It can be a substitute for any edible oil; it can also be used as a cheaper alternative to olive oil which is mostly imported. Cosmetic industry may use it for manufacturing hair lotion, soap, etc. The thiosaponin has some medicinal value. It acts as an adjuvant, anti-inflammatory agent.</div>
                         <div class="purchase-btn">
                             <a class="btn" href="/shop.html">Purchase</a>
                         </div>

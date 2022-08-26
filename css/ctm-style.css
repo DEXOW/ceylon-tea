@@ -12,6 +12,62 @@
     text-align: center;
 }
 
+/* Museum History */
+.museum-history{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    width: 90%;
+}
+.museum-history img{
+    width: 250px;
+    height: auto;
+    margin: 30px 50px 0;
+}
+.museum-history .history-timeline{
+    position: relative;
+}
+.museum-history .timeline{
+    position: absolute;
+    height: 90%;
+    width: 3px;
+    border-radius: 20px;
+    background-color: #7aaa62;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.museum-history .frame{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 20px auto;
+    gap: 33px;
+    margin-top: 30px;
+    margin-left: 42px;
+}
+.museum-history .frame .timeline-dot{
+    display: flex;
+    align-items: center;
+}
+.museum-history .timeline-dot .outer-dot{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: #000 solid 3px;
+}
+.museum-history .timeline-dot .inner-dot{
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #000000;
+    margin-top: 2px;
+    margin-left: 2px;
+}
+
 .gallery{
     margin-top: 50px;
     margin-bottom: 20px;
@@ -33,10 +89,25 @@
     width: 90%;
     height: 250px;
 }
-
+@media (max-width:1020px){
+    .museum-history .timeline{
+        margin-left: 10px;
+    }
+    .museum-history .frame{
+        gap: 20px;
+        width: 95%;
+        margin-top: 30px;
+        margin-left: 2px;
+    }
+}
 @media (max-width:450px){
     .gallery img{
         width: 150px;
         height: auto;
+    }
+}
+@media (max-width: 350px){
+    .museum-history .heading{
+        text-align: center;
     }
 }

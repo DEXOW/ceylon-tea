@@ -22,16 +22,144 @@
     text-align: center;
 }
 
+/* Seletor buttons */
+.shop-buttons{
+    display: flex;
+    justify-content: center;
+    margin: 40px 10px;
+}
+
+.donate-btn, .product-btn{
+    display: flex;
+    justify-content: center;
+    background-color: #006ba8bf;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#donate-check:not(:checked) ~ .shop-buttons .donate-btn:hover, #product-check:not(:checked) ~ .shop-buttons .product-btn:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+#donate-check, #product-check{
+    display: none;
+}
+#donate-check:checked ~ .donate-container{
+    display: block;
+}
+#donate-check:checked ~ .shop-buttons .donate-btn, #product-check:checked ~ .shop-buttons .product-btn{
+    background-color: #00824e;
+    transition: all 0.2s ease;
+}
+#product-check:checked ~ .prod-container .products{
+    display: flex;
+}
+
+/* Donate */
+
+.donate{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.donate .donate-form{
+    display: flex;
+    justify-content: center;
+    border-right: 3px solid #3d3d3d6f;
+    padding: 20px 10px;
+}
+.donate .donate-form form{
+    display: flex;
+    flex-direction: column;
+}
+.donate .donate-form h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.donate .donate-form .field{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+}
+.donate .donate-form label{
+    font-size: 13px;
+    font-weight: 600;
+    color: #3d3d3d;
+}
+.donate .donate-form input{
+    max-width: 200px;
+    border: 1px solid #3d3d3db2;
+    border-radius: 10px;
+    padding: 5px 20px;
+    transition: all 0.3s ease;
+}
+.donate .donate-form input:focus, .donate .donate-form input:hover{
+    border: 1px solid #3d3d3db2;
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+.donate .donate-form .name{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.donate .donate-form .amount input::-webkit-outer-spin-button, .donate .donate-form .amount input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+.donate .donate-form .amount input{
+    -moz-appearance: textfield;
+}
+
+.donate .donate-form .button{
+    align-self: center;
+}
+.donate .donate-form .button input{
+    background-color: #82818193;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+}
+.donate .donate-form .button input:hover{
+    background-color: #464545d1;
+    transform: scale(1.05);
+}
+
+
+.donate-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.donate-links a{
+    text-align: center;
+    width: 200px;
+    background-color: #039783;
+    border-radius: 10px;
+    padding: 5px 20px;
+    margin: 10px 0;
+    transition: all 0.3s ease;
+}
+.donate-links a:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #5d5d5d;
+    transition: all 0.3s ease;
+}
+
 /* Product frames */
 .products{
     width: auto;
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 20px;
+    /* border: 1px solid #373737d1; */
 }
 .products .item{
     border: 5px solid #373737d1;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -66,6 +194,7 @@
     margin: 30px 5px 10px;
 }
 .products .item .buttons a{
+    border-radius: 7px;
     background-color: #898989d1;
     font-size: 13px;
     padding: 10px 15px;
@@ -77,6 +206,26 @@
     transition: all 0.3s ease;
 }
 
+/* Donate */
+
+.donate-container{
+    display: none;
+}
+
+@media (max-width:1024px) {
+    .donate{
+        grid-template: 1fr 1fr/ 1fr;
+    }
+    .donate .donate-form{
+        border-right: none;
+        border-bottom: 3px solid #3d3d3d6f;
+    }
+}
+@media (max-width:768px) {
+    .donate .donate-form .name{
+        flex-direction: column;
+    }
+}
 @media (max-width:375px){
     .products .item .buttons a{
         font-size: 12px;

@@ -7,6 +7,7 @@
 
     <meta name="description" content="Ceylon Tea carries behind it a heritage and success story like no other. Reputed for its signature taste and aroma, Sri Lanka is one of the largest tea exporters to the world. Ceylon Tea is exclusively handpicked by expert tea pluckers and is mostly produced through orthodox and artisanal methods. It is also the freshest tea available in the global market, expertly packed within 3 weeks of harvesting, to preserve freshness, flavour, and aroma.">
     <title>Ceylon Tea | Home</title>
+    <base href="/">
     
     <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
@@ -19,7 +20,6 @@
     <meta name="msapplication-TileColor" content="#00827f">
     <meta name="msapplication-config" content="/favicons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-    <base href="/">
 
 
     <!--Links-->
@@ -71,16 +71,33 @@
                                 <span class="navTitle">Benefits of Tea</span>
                             </a>
                         </li> -->
-                        <li class="list">
-                            <a href="/tea-sales.html">
-                                <span class="icon"><ion-icon name="pricetags-outline"></ion-icon></span>
-                                <span class="navTitle">Tea Sales</span>
-                            </a>
+                        <input type="checkbox" id="sub-check">
+                        <li class="list tea-sales">
+                            <label for="sub-check">
+                                <a>
+                                    <span class="icon"><ion-icon name="pricetags-outline"></ion-icon></span>
+                                    <span class="navTitle">Tea Sales</span>
+                                </a>
+                            </label>
+                            <ul class="sub-menu">
+                                <li class="list">
+                                    <a href="/tea-sales.html">
+                                        <span class="icon"><ion-icon name="chevron-forward-outline"></ion-icon></span>
+                                        <span class="navTitle">Tea Sales 1</span>
+                                    </a>
+                                </li>
+                                <li class="list">
+                                    <a href="/tea-sales2.html">
+                                        <span class="icon"><ion-icon name="chevron-forward-outline"></ion-icon></span>
+                                        <span class="navTitle">Tea Sales 2</span>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="list">
                             <a href="/shop.html">
                                 <span class="icon"><ion-icon name="storefront-outline"></ion-icon></span>
-                                <span class="navTitle">Shop</span>
+                                <span class="navTitle">Shop & Donate</span>
                             </a>
                         </li>
                     </ul>
@@ -91,9 +108,12 @@
 
     <!-- Page Contents -->
     <section id="page-content">
-        <div class="banner">
-            <h1 class="title">Ceylon Tea</h1>
-        </div>
+        <header>
+            <div class="banner">
+                <h1 class="title">Ceylon Tea</h1>
+            </div>
+        </header>
+        
         <div class="container">
             <div class="about">
                 <h3 class="heading">About</h3>
