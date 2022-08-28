@@ -157,8 +157,9 @@ a{
     padding: 5px 0;
     flex-direction: column;
 }
-#sub-check:checked ~ li.tea-sales a{
+#sub-check:checked ~ li.tea-sales:not(.active) a{
     background-color: #3333334d;
+    color: #fff;
 }
 #sub-check:checked ~ li.tea-sales ul.sub-menu{
     display: flex;
@@ -171,6 +172,10 @@ a{
     background-color: #00827f;
     margin-left: 20px;
     display: flex;
+}
+.navigation ul li.tea-sales ul.sub-menu li.active a{
+    background-color: #fff;
+    color: #000;
 }
 .navigation ul li.tea-sales ul.sub-menu li:hover a{
     background-color: #fff!important;
