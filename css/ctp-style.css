@@ -104,6 +104,7 @@
     margin-left: 10%;
     margin-right: 10%;
 }
+
 /* .table-of-contents table td:nth-of-type(2){
     display: flex;
     justify-content: center;
@@ -137,10 +138,25 @@
     .tea-plantations .frame .left{
         justify-content: center;
     }
+    .table-of-contents table td:first-child{
+        padding-left: 20px;
+    }
+    .table-of-contents table td:last-child{
+        padding-right: 20px;
+    }
 }
 @media (max-width: 650px) {
+    .table-of-contents table td:first-child{
+        padding-left: 0;
+    }
+    .table-of-contents table td:last-child{
+        padding-right: 0;
+    }
     .table-of-contents table tr:first-child{
         border-bottom: none;
+    }
+    .table-of-contents table tr:last-child{
+        border-bottom: 3px solid #3a3a3ac3;
     }
     .table-of-contents table{
         background-color: transparent;

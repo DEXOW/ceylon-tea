@@ -14,12 +14,13 @@
     width: 90%;
 }
 .about .heading{
-    text-align: center;
+    text-align: left;
     margin-bottom: 20px;
 }
 .about p{
     font-size: 17px;
-    text-align: center;
+    text-align: justify;
+    margin-left: 40px;
 }
 
 /* Validating tea as Ceylon Tea */
@@ -32,8 +33,19 @@
     margin-bottom: 20px;
     width: 90%;
 }
+.tea-validation .top{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    margin: 10px 0;
+}
+.tea-validation .top h3{
+    margin-bottom: 0;
+}
 .tea-validation .top img{
-    margin-left: 50px;
+    width: 85px;
 }
 .tea-validation h3{
     font-family: Gidolinya;
@@ -43,6 +55,7 @@
     margin-left: 40px;
 }
 .tea-validation ul li{
+    list-style-image: url(/img/m_tea-leaf-icon.png);
     font-family: 'Dosis', sans-serif;
     font-weight: 500;
     font-size: 17px;
@@ -51,6 +64,7 @@
 
 /* Ceylon Tea History */
 .tea-history{
+    text-align: justify;
     display: flex;
     flex-direction: column;
     margin-left: auto;
@@ -132,7 +146,7 @@
     display: flex;
     align-items: center;
     flex-direction: row;
-    column-gap: 20vw;
+    column-gap: 15vw;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -168,7 +182,16 @@
     }
 }
 @media (max-width: 350px){
+    .about .heading{
+        text-align: center;
+    } 
+    .about p{
+        margin-left: 0;
+    }
     .tea-history .heading{
         text-align: center;
+    }
+    .tea-validation ul{
+        margin-left: 20px;
     }
 }
