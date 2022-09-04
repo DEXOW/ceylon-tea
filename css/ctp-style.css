@@ -1,5 +1,5 @@
 .banner::before{
-    background: linear-gradient(rgb(255, 255, 255),rgba(171, 171, 171, 0.512),rgba(32, 32, 32, 0.49)) ,url('/img/landing3.jfif');
+    background: linear-gradient(rgb(255, 255, 255) 50px,rgba(171, 171, 171, 0.512),rgba(32, 32, 32, 0.49)) ,url('/img/tea-plucker.jpg');
 }
 .desc {
     width: 90%;

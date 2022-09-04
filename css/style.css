@@ -186,8 +186,8 @@ a{
 /* Heading Banner */
 .banner{
     position: relative;
-    margin-top: 50px;
-    height: 250px;
+    /* margin-top: 50px; */
+    height: 300px;
 }
 .banner::before{
     content: '';
@@ -206,7 +206,7 @@ a{
     font-size: 2.5rem;
     font-family: 'Lobster';
     text-align: center;
-    padding-top: 50px;
+    padding-top: 100px;
 }
 
 /* .banner{

@@ -4,7 +4,7 @@
     justify-content: center;
 } */
 .banner::before{
-    background: linear-gradient(rgb(255, 255, 255),rgba(171, 171, 171, 0.512),rgba(32, 32, 32, 0.49)) ,url('/img/landing5.jpg');
+    background: linear-gradient(rgb(255, 255, 255) 50px,rgba(171, 171, 171, 0.512),rgba(32, 32, 32, 0.49)) ,url('/img/landing5.jpg');
     background-position: center!important;
 }
 /* .banner h1.title{
@@ -49,16 +49,19 @@
 #donate-check:checked ~ .donate-container{
     display: block;
 }
+#product-check:checked ~ .prod-container .products{
+    display: flex;
+}
 #donate-check:checked ~ .shop-buttons .donate-btn, #product-check:checked ~ .shop-buttons .product-btn{
     background-color: #00824e;
     transition: all 0.2s ease;
 }
-#product-check:checked ~ .prod-container .products{
-    display: flex;
-}
+
 
 /* Donate */
-
+.donate-container{
+    display: none;
+}
 .donate{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -158,6 +161,7 @@
     /* border: 1px solid #373737d1; */
 }
 .products .item{
+    background-color: #fff;
     border: 5px solid #373737d1;
     border-radius: 20px;
     display: flex;
@@ -204,12 +208,6 @@
 .products .item .buttons a:hover{
     background-color: #6c6c6c;
     transition: all 0.3s ease;
-}
-
-/* Donate */
-
-.donate-container{
-    display: none;
 }
 
 @media (max-width:1024px) {

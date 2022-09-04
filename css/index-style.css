@@ -1,5 +1,5 @@
 .banner::before{
-    background: linear-gradient(rgb(255, 255, 255),rgba(255, 255, 255, 0.512),rgba(32, 32, 32, 0.49)) ,url('/img/landing2.jpg');
+    background: linear-gradient(rgb(255, 255, 255) 50px,rgba(255, 255, 255, 0.512),rgba(32, 32, 32, 0.49)) ,url('/img/landing2.jpg');
 }
 
 
