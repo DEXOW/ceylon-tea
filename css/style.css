@@ -19,6 +19,8 @@
 }
 body{
     background: url(/img/leaf-bg.svg);
+    background-attachment: fixed;
+    background-size: cover;
     overflow-x: hidden;
 }
 p{
@@ -271,6 +273,7 @@ footer .content .docs a{
     font-weight: 600;
     margin-left: 5px;
     margin-right: 5px;
+    white-space: nowrap;
 }
 footer .content .socials{
     display: flex;
@@ -284,6 +287,12 @@ footer .content .socials ion-icon{
     padding-left: 5px;
     padding-right: 5px;
     margin: 0;
+    transition: transform 0.3s, color 0.3s;
+}
+footer .content .socials ion-icon:hover{
+    transform: scale(1.2);
+    color: #121212d0;
+    transition: all 0.3s ease;
 }
 
 /* Mobile menu */

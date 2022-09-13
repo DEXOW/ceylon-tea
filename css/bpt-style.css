@@ -79,13 +79,41 @@
     transition: all 0.3s ease;
 }
 
+.btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.btn-container h1.heading{
+    color: #045150;
+}
+.btn-container .ts-btn{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 20px;
+}
+.btn-container .ts-btn a{
+    background-color: #00827f;
+    border-radius: 17px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+.btn-container .ts-btn a:hover{
+    background-color: #168d8be7;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
 @media (max-width:768px){
     .by-products .frame{
         flex-direction: column!important;
         align-items: center;
     }
     .by-products .frame .details{
-        text-align: center!important;
+        text-align: justify!important;
         width: 85%;
     }
     .by-products .frame .details .purchase-btn{

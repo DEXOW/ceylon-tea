@@ -14,6 +14,14 @@
 }
 
 /* Product container */
+@keyframes fadeIn {
+    from {opacity: 0;transform: translateY(100vh);}
+    to {opacity: 1;transform: translateY(0vh);}
+}
+#page-content section{
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
 .prod-container h3.heading{
     text-align: center;
     font-family: Lobster;

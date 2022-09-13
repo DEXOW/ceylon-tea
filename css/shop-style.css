@@ -54,6 +54,7 @@
 }
 #donate-check:checked ~ .shop-buttons .donate-btn, #product-check:checked ~ .shop-buttons .product-btn{
     background-color: #00824e;
+    color: #fff;
     transition: all 0.2s ease;
 }
 
@@ -91,7 +92,7 @@
     color: #3d3d3d;
 }
 .donate .donate-form input{
-    max-width: 200px;
+    /* max-width: 200px; */
     border: 1px solid #3d3d3db2;
     border-radius: 10px;
     padding: 5px 20px;
@@ -123,10 +124,13 @@
     margin: 10px 0;
     border: none;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 .donate .donate-form .button input:hover{
-    background-color: #464545d1;
+    background-color: #157f38;
+    color: #fff;
     transform: scale(1.05);
+    transition: all 0.3s ease;
 }
 
 
@@ -135,20 +139,30 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 10px;
 }
 .donate-links a{
-    text-align: center;
-    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    width: 250px;
     background-color: #039783;
     border-radius: 10px;
     padding: 5px 20px;
     margin: 10px 0;
     transition: all 0.3s ease;
+    white-space: nowrap;
 }
 .donate-links a:hover{
     transform: scale(1.05);
     box-shadow: 0 0 10px #5d5d5d;
     transition: all 0.3s ease;
+}
+.donate-links a img{
+    width: 40px;
+    margin: 5px 15px 5px 0;
 }
 
 /* Product frames */

@@ -181,7 +181,7 @@
         flex-direction: column;
     }
 }
-@media (max-width: 350px){
+@media (max-width: 426px){
     .about .heading{
         text-align: center;
     } 
