@@ -1,6 +1,10 @@
 {
     "name": "Ceylon Tea",
     "short_name": "Ceylon Tea",
+    "start_url": "index.html",
+    "description": "Ceylon Tea is the freshest tea in the global market",
+    "lang": "en",
+    "orientation": "portrait-primary",
     "icons": [
         {
             "src": "/favicons/android-chrome-192x192.png",
