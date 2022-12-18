@@ -138,28 +138,58 @@
         <div class="container donate-container">
             <div class="donate">
                 <div class="donate-form">
-                    <form>
-                        <h3>Donation</h3>
-                        <div class="name">
-                            <div class="field">
-                                <input type="text" name="fname" id="fname" placeholder="John">
-                                <label for="fname">First Name</label>
+                    <form name="donation-form" id="donation-form">
+                        <div class="sub-section details">
+                            <div class="sect-content">
+                                <div class="input-cont amount">
+                                    <p>Donation</p>
+                                    <div class="values">
+                                        <input type="radio" name="amount" id="amount1" value="100">
+                                        <label for="amount1">LKR 100</label>
+                                        <input type="radio" name="amount" id="amount2" value="500">
+                                        <label for="amount2">LKR 500</label>
+                                        <input type="radio" name="amount" id="amount3" value="1000">
+                                        <label for="amount3">LKR 1000</label>
+                                        <input type="radio" name="amount" id="amount4" value="2000">
+                                        <label for="amount4">LKR 2000</label>
+                                        <input type="radio" name="amount" id="amount5" value="5000">
+                                        <label for="amount5">LKR 5000</label>
+                                        <input type="radio" name="amount" id="amount6" value="10000">
+                                        <label for="amount6">LKR 10000</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-cont">
+                                        <p>Full Name</p>
+                                        <input type="text" name="name" id="name" placeholder="John Doe">
+                                    </div>
+                                    <div class="input-cont">
+                                        <p>Address</p>
+                                        <input type="text" name="address" id="address" placeholder="123 East Avenue, London">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-cont">
+                                        <p>Card Number</p>
+                                        <input type="text" name="card-number" id="card-number" placeholder="XXXX XXXX XXXX XXXX" maxlength="19">
+                                    </div>
+                                    <div class="input-cont">
+                                        <p>Name on Card</p>
+                                        <input type="text" name="name-card" id="name-card" placeholder="John Doe">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-cont exp-date">
+                                        <p>Expiry Date</p>
+                                        <input type="text" name="exp-date" id="exp-date" placeholder="mm / yy" maxlength="5">
+                                    </div>
+                                    <div class="input-cont cvv">
+                                        <p>CVV</p>
+                                        <input type="text" name="cvv" id="cvv" placeholder="123" maxlength="3">
+                                    </div>
+                                </div>
+                                <button type="button" class="confirm-details confirm" id="confirm-details" disabled>Confirm</button>
                             </div>
-                            <div class="field">
-                                <input type="text" name="lname" id="lname" placeholder="Doe">
-                                <label for="lname">Last Name</label>
-                            </div>
-                        </div>
-                        <div class="field">
-                            <input type="email" name="mail" id="email" placeholder="john.doe@gmail.com">
-                            <label for="email">Email</label>
-                        </div>
-                        <div class="field amount">
-                            <input type="number" name="amount" id="amt-custom" placeholder="1000">
-                            <label for="amt-custom">Amount (in LKR)</label>
-                        </div>
-                        <div class="button">
-                            <input type="submit" name="donate" id="submit-btn" value="DONATE">
                         </div>
                     </form>
                 </div>
@@ -310,7 +340,17 @@
             <!--PNGITEM (2019) Transparent Free Leaf Png - Transparent Background Tea Leaf Vector Png, Png Download - Cup, HD Png Download [Online] Available from: https://www.pngitem.com/middle/oooTTb_transparent-free-leaf-png-transparent-background-tea-leaf/ [Accessed: 04th September 2022]-->
         </footer>
     </section>
+    <div class="modal-cont">
+        <div class="modal-content">
+            <button type="button" class="close" id="close"><ion-icon name="close-outline"></ion-icon></button>
+            <div class="msg">
+                <div class="modal-icon"></div>
+                <div class="order-details"></div>
+            </div>
+        </div>
+    </div>
 
+    <script src="js/donate.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>

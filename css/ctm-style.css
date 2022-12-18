@@ -91,6 +91,514 @@
     width: 90%;
     height: 250px;
 }
+
+ion-icon.green-check{
+    color: #26ba46;
+}
+ion-icon.grey-check{
+    color: #4c4c49b6;
+}
+ion-icon.blue{
+    color: #003547d8;
+}
+
+/* -- Grid -- */
+.grid{
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+.grid .heading{
+    border-radius: 12px;
+    border: #003547 solid 5px;
+    padding: 20px 50px;
+    text-align: center;
+    color: #000;
+    font-family: Oswald;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 50px 0 30px;
+}
+.grid .sub-heading{
+    color: #000;
+    font-family: Oswald;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    margin: 20px;
+}
+.grid .sect-heading{
+    font-family: Gidolinya;
+    font-size: 23px;
+    color: #2a2a2a;
+    margin: 10px;
+}
+.grid h4{
+    color: #5a5a5a;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+.grid .sect-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grid .sect-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grid .sect-3{
+    /* display: grid;
+    grid-template-columns: auto auto; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+.grid .left, .grid .right{
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    margin: 0 auto;
+}
+.purchase, .summary{
+    border: #003547 solid 5px;
+    border-radius: 12px;
+}
+
+/* -- Price Table -- */
+.price-table{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    width: 90%;
+}
+.price-table th{
+    background-color: #000;
+    color: #fff;
+    padding: 10px 10px;
+    font-weight: 400;
+}
+.price-table td{
+    padding: 10px 10px;
+    font-weight: 400;
+    text-align: center;
+    background-color: #70707018;
+}
+.price-table .label{
+    background-color: #7a7a7a;
+    color: #fff;
+}
+
+/* -- Ticket Purchasing -- */
+
+.purchase{
+    min-width: 300px;
+    max-width: 450px;
+    padding: 30px;
+}
+.purchase .sect-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.purchase .sect-header ion-icon{
+    font-size: 30px;
+}
+.purchase .sect-content{
+    /* width: 90%; */
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.error-msg{
+    /* display: none; */
+    color: #ff0000;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+/* -- Date -- */
+
+.purchase input, .purchase select{
+    padding: 10px;
+    border: 2px solid #2a2a2a49;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* -- Details -- */
+
+.purchase .details input, .purchase .details select{
+    text-align: left;
+}
+.purchase .details .sect-content input, .purchase .details .sect-content select{
+    width: 150px;
+}
+.purchase .details .sect-content{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    align-items: flex-start;
+}
+.purchase .details #name{
+    max-width: 100%;
+    grid-area: 1 / span 2;
+}
+.purchase .confirm-details{
+    margin-top: auto;
+}
+
+/* -- Ticket Type -- */
+
+.tckts{
+    margin: 10px 0;
+}
+.tckts .pass{
+    margin: 20px 0;
+}
+.tckts .row{
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 5px 0;
+}
+.tckts .tckt{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: end;
+    text-align: center;
+    white-space: nowrap;
+}
+.tckts .tckt-input{
+    display: flex;
+    justify-content: row;
+    align-items: center;
+}
+.tckts input[type="number"]{
+    background-color: #000d0f;
+    color: #00deff;
+    font-weight: 600;
+    font-size: 15px;
+    width: 60px;
+    height: 40px;
+    border-radius: 20px;
+    border: #000d0f solid 5px;
+    text-align: center;
+    position: relative;
+}
+.tckts input::-webkit-outer-spin-button, .tckts input::-webkit-inner-spin-button{
+    appearance: none;
+}
+.tckts .tckt-input .prev-btn div{
+    height: 15px;
+    width: 15px;
+    border-radius: 2px;
+    border-top: #000 solid 5px;
+    border-left: #000 solid 5px;
+    transform: rotate(315deg);
+}
+.tckts .tckt-input .next-btn div{
+    height: 15px;
+    width: 15px;
+    border-radius: 2px;
+    border-top: #000 solid 5px;
+    border-left: #000 solid 5px;
+    transform: rotate(135deg);
+}
+.tckts .tckt-input .next-btn, .tckts .tckt-input .prev-btn{
+    padding: 5px;
+    cursor: pointer;
+}
+
+/* -- Ticket Duration -- */
+
+.duration{
+    flex-direction: column;
+}
+.duration input[type="radio"]{
+    display: none;
+}
+.duration .options{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0 40px;
+}
+.duration .options label{
+    padding: 5px 17px;
+    text-align: center;
+    border: #007a7866 solid 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#duration-3:checked ~ label:nth-of-type(1){
+    background-color: #007a784b;
+    border: #000 solid 5px;
+}
+#duration-12:checked ~ label:nth-of-type(2){
+    background-color: #007a784b;
+    border: #000 solid 5px;
+}
+#duration-24:checked ~ label:nth-of-type(3){
+    background-color: #007a784b;
+    border: #000 solid 5px;
+}
+#duration-48:checked ~ label:nth-of-type(4){
+    background-color: #007a784b;
+    border: #000 solid 5px;
+}
+
+/* -- Total -- */
+.total-display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+.total-display .total{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    font-size: 25px;
+}
+.total-display .total p{
+    font-weight: 600;
+}
+
+/* -- Buttons -- */
+.buttons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+.buttons .reset{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #e94637;
+    border-radius: 50px;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+.confirm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    padding: 0 20px;
+    background-color: #26ba46;
+    border-radius: 50px;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+.confirm:disabled{
+    background-color: #878987;
+    color: #000000ae;
+    cursor: default;
+}
+
+
+/* -- Summary -- */
+
+.summary{
+    min-width: 300px;
+    max-width: 380px;
+    padding: 30px 20px;
+    margin-bottom: 20px;
+}
+.summary .details-summary{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    /* gap: 15px; */
+    margin: 20px 10px;
+}
+.summary .purchases{
+    margin-top: 20px;
+}
+.summary .purchase-summary{
+    margin: 20px 0;
+}
+.summary .purchase-summary .title .delete{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50px;
+    background-color: #919191da;
+    cursor: pointer;
+}
+.summary .purchase-summary .title{
+    font-family: 'Poppins';
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.summary .purchase-summary .title span{
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+.summary .purchase-summary table{
+    margin: 0 auto;
+}
+.summary .purchase-summary table thead p{
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+.summary .purchase-summary table thead .title-tckt{
+    min-width: 100px;
+}
+.summary .purchase-summary table tr td div{
+    margin: 0 5px;
+    white-space: nowrap;
+}
+.summary .purchase-summary table tr td .qty{
+    margin: 0 10px;
+    text-align: center;
+}
+.summary .purchase-summary table tfoot tr td div{
+    font-weight: 600;
+}
+.summary .gTotal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin: 10px 10px 0 20px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.summary .gTotal .tag{
+    font-size: 20px;
+    font-weight: 700;
+}
+.summary .summary-buttons{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 10px;
+    gap: 10px;
+}
+.summary .summary-buttons .order{
+    display: none;
+}
+.summary .summary-buttons .lCheck{
+    background-color: #003547d8;
+    color: #fff;
+}
+
+/* -- Favorites -- */
+
+.fav{
+    padding: 20px;
+}
+.fav .order-fav{
+    display: none;
+    margin: 10px auto;
+}
+
+/* -- Confirmation Message -- */
+
+.modal-cont{
+    display: none;
+    /* display: flex; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000a6;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(3px);
+    z-index: 105;
+}
+.modal-content{
+    position: relative;
+    min-width: 250px;
+    min-height: 200px;
+    background-color: #e4e4e4;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.modal-content .close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50px;
+    background-color: #919191da;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+}
+.modal-content .close:hover{
+    background-color: #6f6f6fda;
+    transition: background-color 0.1s ease;
+}
+.modal-content .msg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 10px;
+}
+.modal-content .msg ion-icon{
+    font-size: 70px;
+}
+.modal-content .msg p{
+    font-size: 20px;
+    font-weight: 600;
+}
+.modal-content .order-details{
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* -- Mobile Responsive -- */
+
+
 @media (max-width:1020px){
     .museum-history .timeline{
         margin-left: 10px;
@@ -102,14 +610,62 @@
         margin-left: 2px;
     }
 }
+@media (max-width:600px){
+    .grid .heading{
+        font-size: 20px;
+    }
+    .price-table thead tr:nth-child(1):nth-child(1){
+        display: none;
+    }
+    .price-table tbody .type{
+        display: none;
+    }
+    .price-table table td:before {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: #000;
+        color: #fff;
+        padding: 10px 20px;
+	}
+    .price-table table tbody .type-label {
+        text-align: center;
+        background-color: #a6a6a6d5;
+        color: #000000;
+        padding: 10px 20px;
+	}
+    .price-table table tbody .label{
+        background-color: #000;
+    }
+}
 @media (max-width:450px){
     .gallery img{
         width: 150px;
         height: auto;
     }
 }
+@media (max-width:425px) {
+    .purchase .details .sect-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
 @media (max-width: 350px){
     .museum-history .heading{
         text-align: center;
+    }
+
+    .purchase{
+        padding: 30px 10px;
+    }
+    .summary .purchase table tr td div{
+        margin: 0;
+    }
+    .summary{
+        padding: 30px 15px;
+    }
+    .fav{
+        padding: 30px 15px 10px;
     }
 }
