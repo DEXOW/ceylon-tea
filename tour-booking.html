@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceylon Tea | Tea Museum</title>
+    <base href="/">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#00827f">
+    <link rel="shortcut icon" href="/favicons/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Ceylon Tea">
+    <meta name="application-name" content="Ceylon Tea">
+    <meta name="msapplication-TileColor" content="#00827f">
+    <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--Links-->
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/ctm-style.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <section id="nav">
+        <nav class="nav-bar">
+            <input type="checkbox" id="menu-check">
+            <label for="menu-check" class="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <div class="modal">
+                <div class="navigation">
+                    <div class="logo">
+                        <a href="/"><img srcset="/img/img_webp/CTlogo.webp" src="/img/CTlogo.png" alt="logo"></a>
+                    </div>
+                    <ul>
+                        <li class="list">
+                            <a href="/">
+                                <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                                <span class="navTitle">Home</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="/ceylon-tea-plantations.html">
+                                <span class="icon"><ion-icon name="location-outline"></ion-icon></span>
+                                <span class="navTitle">Ceylon Tea Plantations</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="/ceylon-tea-museum.html">
+                                <span class="icon"><ion-icon name="cafe-outline"></ion-icon></span>
+                                <span class="navTitle">Ceylon Tea Museum</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="/by-products-of-tea.html">
+                                <span class="icon"><ion-icon name="leaf-outline"></ion-icon></span>
+                                <span class="navTitle">By Products of Tea</span>
+                            </a>
+                        </li>
+                        <input type="checkbox" id="sub-check">
+                        <li class="list tea-sales">
+                            <label for="sub-check">
+                                <a>
+                                    <span class="icon"><ion-icon name="pricetags-outline"></ion-icon></span>
+                                    <span class="navTitle">Tea Sales</span>
+                                </a>
+                            </label>
+                            <ul class="sub-menu">
+                                <li class="list">
+                                    <a href="/tea-sales.html">
+                                        <span class="icon"><ion-icon name="chevron-forward-outline"></ion-icon></span>
+                                        <span class="navTitle">Tea Sales 1</span>
+                                    </a>
+                                </li>
+                                <li class="list">
+                                    <a href="/tea-sales2.html">
+                                        <span class="icon"><ion-icon name="chevron-forward-outline"></ion-icon></span>
+                                        <span class="navTitle">Tea Sales 2</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list">
+                            <a href="/shop.html">
+                                <span class="icon"><ion-icon name="storefront-outline"></ion-icon></span>
+                                <span class="navTitle">Shop & Donate</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Page Contents -->
+    <section id="page-content">
+        <header>
+            <div class="banner">
+                <h1 class="title">Ceylon Tea Museum</h1>
+            </div>
+        </header>
+
+        <div class="grid">
+            <div class="sect-1">
+                <h3 class="heading">Tickets Purchasing</h3>
+            </div>
+            <div class="sect-2">
+                <div class="price-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th rowspan="2">Type</th>
+                                <th colspan="3">Duration</th>
+                            </tr>
+                            <tr>
+                                <th>3Hrs</th>
+                                <th>12Hrs</th>
+                                <th>24Hrs</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="type">Infant (Below 4Yrs)</td>
+                                <td colspan="3">Free</td>
+                            </tr>
+                            <tr>
+                                <td class="label" colspan="4">Local Pass</td>
+                            </tr>
+                            <tr>
+                                <td class="type">Child (4Yrs - 13Yrs)</td>
+                                <td>LKR 700</td>
+                                <td>LKR 1050</td>
+                                <td>LKR 1300</td>
+                            </tr>
+                            <tr>
+                                <td class="type">Adult</td>
+                                <td>LKR 1200</td>
+                                <td>LKR 1550</td>
+                                <td>LKR 1800</td>
+                            </tr>
+                            <tr>
+                                <td class="label" colspan="4">Foreign Pass</td>
+                            </tr>
+                            <tr>
+                                <td class="type">Child (4Yrs - 13Yrs)</td>
+                                <td>LKR 2700</td>
+                                <td>LKR 3150</td>
+                                <td>LKR 3500</td>
+                            </tr>
+                            <tr>
+                                <td class="type">Adult</td>
+                                <td>LKR 5500</td>
+                                <td>LKR 5950</td>
+                                <td>LKR 6300</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="sect-3">
+                <div class="left">
+                    <div class="purchase">
+                        <h3 class="sub-heading">Purchase</h3>
+                        <!-- Guest Details -->
+                        <div class="sub-section details">
+                            <div class="sect-header">
+                                <h3 class="sect-heading">Guest Details</h3>
+                                <div class="sect-icon" id="details-icon">
+                                    <ion-icon name="remove-circle-outline" class="grey-check"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="sect-content">
+                                <div class="input-cont">
+                                    <p>Full Name</p>
+                                    <input type="text" name="name" id="name" placeholder="John Doe">
+                                </div>
+                                <div class="input-cont">
+                                    <p>Contact Number</p>
+                                    <input type="tel" name="phone" id="phone" placeholder="+94 XXX XXX XXX">
+                                </div>
+                                <div class="input-cont">
+                                    <p>Email</p>
+                                    <input type="email" name="email" id="email" placeholder="john.doe@mail.com">
+                                </div>
+                                <div class="input-cont">
+                                    <p>Confirm Email</p>
+                                    <input type="email" name="confirm-email" id="confirm-email" placeholder="john.doe@mail.com">
+                                </div>
+                                <div class="cont">
+                                    <p>Gender</p>
+                                    <select id="gender" name="gender">
+                                        <option value="M">Male</option>
+                                        <option value="F">Female</option>
+                                    </select>
+                                </div>
+                                <button type="button" class="confirm-details confirm" id="confirm-details" disabled>Confirm</button>
+                            </div>
+                        </div>
+                        <!-- Date -->
+                        <div class="sub-section date">
+                            <div class="sect-header">
+                                <h3 class="sect-heading">Date</h3>
+                                <div class="sect-icon" id="date-icon">
+                                    <ion-icon name="remove-circle-outline" class="grey-check"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="sect-content">
+                                <label for="date">Select Date</label>
+                                <input type="date" name="date" id="date">
+                            </div>
+                        </div>
+                        <!-- Tickets -->
+                        <div class="sub-section tckts">
+                            <div class="sect-header">
+                                <h3 class="sect-heading">Tickets</h3>
+                                <div class="sect-icon" id="tckt-icon">
+                                    <ion-icon name="remove-circle-outline" class="grey-check"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="sect-content">
+                                <!-- Ticket Type -->
+                                <div class="local-pass pass">
+                                    <h4>Local Pass</h4>
+                                    <div class="row">
+                                        <div class="infant-tckt tckt">
+                                            <label for="infant-tckt-count">Infant Pass</label>
+                                            <div class="tckt-input">
+                                                <div class="prev-btn">
+                                                    <div></div>
+                                                </div>
+                                                <input type="number" name="infant-tckt-count" id="infant-tckt-count" value="0" disabled>
+                                                <div class="next-btn">
+                                                    <div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="child-tckt tckt">
+                                            <label for="child-tckt-count">Child Pass</label>
+                                            <div class="tckt-input">
+                                                <div class="prev-btn">
+                                                    <div></div>
+                                                </div>
+                                                <input type="number" name="child-tckt-count" id="child-tckt-count" value="0" disabled>
+                                                <div class="next-btn">
+                                                    <div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="adult-tckt tckt">
+                                            <label for="adult-tckt-count">Adult Pass</label>
+                                            <div class="tckt-input">
+                                                <div class="prev-btn">
+                                                    <div></div>
+                                                </div>
+                                                <input type="number" name="adult-tckt-count" id="adult-tckt-count" value="0" disabled>
+                                                <div class="next-btn">
+                                                    <div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="foreign-pass pass">
+                                    <h4>Foreign Pass</h4>
+                                    <div class="row">
+                                        <div class="foreign-infant-tckt tckt">
+                                            <label for="foreign-infant-tckt-count">Infant Pass</label>
+                                            <div class="tckt-input">
+                                                <div class="prev-btn">
+                                                    <div></div>
+                                                </div>
+                                                <input type="number" name="foreign-infant-tckt-count" id="foreign-infant-tckt-count" value="0" disabled>
+                                                <div class="next-btn">
+                                                    <div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="foreign-child-tckt tckt">
+                                            <label for="foreign-child-tckt-count">Child Pass</label>
+                                            <div class="tckt-input">
+                                                <div class="prev-btn">
+                                                    <div></div>
+                                                </div>
+                                                <input type="number" name="foreign-child-tckt-count" id="foreign-child-tckt-count" value="0" disabled>
+                                                <div class="next-btn">
+                                                    <div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="foreign-tckt tckt">
+                                            <label for="foreign-tckt-count">Adult Pass</label>
+                                            <div class="tckt-input">
+                                                <div class="prev-btn">
+                                                    <div></div>
+                                                </div>
+                                                <input type="number" name="foreign-tckt-count" id="foreign-tckt-count" value="0" disabled>
+                                                <div class="next-btn">
+                                                    <div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Ticket Duration -->
+                                <div class="duration">
+                                    <h4>Duration</h4>
+                                    <div class="options">
+                                        <input type="radio" id="duration-3" name="duration" value="3">
+                                        <label for="duration-3">3<br>Hrs</label>
+                                        <input type="radio" id="duration-12" name="duration" value="12">
+                                        <label for="duration-12">12<br>Hrs</label>
+                                        <input type="radio" id="duration-24" name="duration" value="24">
+                                        <label for="duration-24">24<br>Hrs</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Purchase Total -->
+                            <div class="total-display">
+                                <div class="total">
+                                    <p class="currency">LKR</p>
+                                    <p class="value" id="total">0.00</p>
+                                </div>
+                            </div>
+                            <!-- Buttons -->
+                            <div class="buttons">
+                                <button type="button" class="reset" id="reset"><ion-icon name="trash-outline"></ion-icon></button>
+                                <button type="button" class="confirm" id="confirm" disabled>Confirm</button>
+                                <button type="button" class="confirm add-fav" id="add-fav" disabled>Add to Favourites</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="fav summary">
+                        <h3 class="sub-heading">Favourites</h3>
+                        <div class="purchase-summary">
+                            <p>No Favourites</p>
+                        </div>
+                        <button type="button" class="confirm order-fav" id="order-fav">Order Favourite</button>
+                    </div>
+                    <div class="summary">
+                        <h3 class="sub-heading">Summary</h3>
+                        <div class="purchases">
+                            <p>No Bookings</p>
+                        </div>
+                        <div class="summary-buttons">
+                            <button type="button" id="order" class="order confirm">Place Order</button>
+                            <button type="button" id="lCheck" class="lCheck confirm">Check Loyalty</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer>
+            <div class="content">
+                <div class="copyrights">&copy; 2022 Thinal Perera. All rights reserved.</div>
+                <div class="docs">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                </div>
+                <div class="socials">
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="#"><ion-icon name="mail-outline"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                </div>
+            </div>
+
+            <!--References-->
+            <!--I Love Sri Lanka (2022) Ceylon Tea Museum [Online] Available from: https://www.lovesrilanka.org/ceylon-tea-museum/ [Accessed: 21st August 2022]-->
+            <!--Ceylon Tea Museum (2021) Tea Museum [Online] Available from: https://www.ceylonteamuseum.com/the-museum.html [Accessed: 18th August 2022]-->
+            
+        </footer>
+    </section>
+    <div class="modal-cont">
+        <div class="modal-content">
+            <button type="button" class="close" id="close"><ion-icon name="close-outline"></ion-icon></button>
+            <div class="msg">
+                <div class="modal-icon"></div>
+                <div class="order-details"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/ticket.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

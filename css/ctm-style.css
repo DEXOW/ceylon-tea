@@ -596,6 +596,34 @@ ion-icon.blue{
     margin-top: 10px;
 }
 
+.tour-booking-btn{
+    gap: 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 110;
+}
+.tour-booking-btn a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #005f7f;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    gap: 5px;
+    transition: background-color 0.3s ease;
+}
+.tour-booking-btn p{
+    font-size: 15px;
+}
+.tour-booking-btn a:hover{
+    background-color: #003547;
+    transition: background-color 0.3s ease;
+}
+
+
 /* -- Mobile Responsive -- */
 
 
@@ -608,6 +636,16 @@ ion-icon.blue{
         width: 95%;
         margin-top: 30px;
         margin-left: 2px;
+    }
+    .tour-booking-btn p{
+        display: none;
+    }
+    .tour-booking-btn a:hover p{
+        display: block;
+    }
+    .tour-booking-btn{
+        left: 20px;
+        right: auto!important;
     }
 }
 @media (max-width:600px){
