@@ -34,7 +34,7 @@ document.querySelectorAll(".details .sect-content .input-cont").forEach( ele => 
 });
 
 function detailsValidation() {
-    if (document.querySelectorAll(".details .sect-content .error-msg").length < 1){
+    if (document.querySelectorAll(".details .sect-content .error-msg").length < 1 && document.getElementById("name").value != "" && document.getElementById("phone").value != "" && document.getElementById("email").value != "" && document.getElementById("confirm-email").value != "" && document.getElementById("email").value == document.getElementById("confirm-email").value){
         document.getElementById("details-icon").innerHTML = `<ion-icon name="checkmark-circle-outline" class="green-check"></ion-icon>`;
         document.getElementById("confirm-details").disabled = false;
         sectValid.details = true;
