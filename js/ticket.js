@@ -208,7 +208,7 @@ document.getElementById("confirm").addEventListener("click", function (){
 document.getElementById("lCheck").addEventListener("click", function (){
     document.querySelector(".modal-icon").innerHTML = `<ion-icon name="ribbon-outline" class="blue"></ion-icon>`;
     document.querySelector(".order-details").innerHTML = `
-        <p>Loyalty Points : ${localStorage.getItem("loyalty_points") != null ? localStorage.getItem("loyalty_points") : "0"}</p>
+        <p>Loyalty Points : ${localStorage.getItem("loyalty_points") != null ? isNaN(parseInt(localStorage.getItem("loyalty_points"))) ? "0" : localStorage.getItem("loyalty_points") : "0"}</p>
         `
     document.querySelector(".modal-cont").style.display = "flex";
     document.body.style.overflow = "hidden";
@@ -226,8 +226,11 @@ document.getElementById("order").addEventListener("click", function (){
         document.querySelector(".modal-cont").style.display = "flex";
         document.body.style.overflow = "hidden";
     }
+    if (isNaN(parseInt(localStorage.getItem("loyalty_points")))){
+        localStorage.setItem("loyalty_points",0);
+    }
     if (tcktCount > 3){
-        localStorage.setItem("loyalty_points",parseInt(localStorage.getItem("loyalty_points")) + (tcktCount*15));
+        localStorage.setItem("loyalty_points",(parseInt(localStorage.getItem("loyalty_points")) + (parseInt(tcktCount)*15)));
     }
     summary = [];
 });
