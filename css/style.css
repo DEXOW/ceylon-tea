@@ -18,7 +18,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background: url(/img/leaf-bg.svg);
+    background: url(img/leaf-bg.svg);
     background-attachment: fixed;
     background-size: cover;
     overflow-x: hidden;
@@ -196,7 +196,7 @@ a{
     position: absolute;
     height: inherit;
     width: 100%;
-    /* background: linear-gradient(rgb(255, 255, 255),rgba(255, 255, 255, 0.512),rgba(32, 32, 32, 0.49)) ,url('/img/landing2.jpg'); */
+    /* background: linear-gradient(rgb(255, 255, 255),rgba(255, 255, 255, 0.512),rgba(32, 32, 32, 0.49)) ,url('img/landing2.jpg'); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;

@@ -1,5 +1,5 @@
 .banner::before{
-    background: linear-gradient(rgb(255, 255, 255) 50px,rgba(255, 255, 255, 0.512),rgba(32, 32, 32, 0.49)) ,url('/img/landing2.jpg');
+    background: linear-gradient(rgb(255, 255, 255) 50px,rgba(255, 255, 255, 0.512),rgba(32, 32, 32, 0.49)) ,url('../img/landing2.jpg');
 }
 
 
@@ -55,7 +55,7 @@
     margin-left: 40px;
 }
 .tea-validation ul li{
-    list-style-image: url(/img/m_tea-leaf-icon.png);
+    list-style-image: url(img/m_tea-leaf-icon.png);
     font-family: 'Dosis', sans-serif;
     font-weight: 500;
     font-size: 17px;

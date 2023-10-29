@@ -1,6 +1,6 @@
 
 .banner::before{
-    background: linear-gradient(rgb(255, 255, 255) 50px,rgba(171, 171, 171, 0.512),rgba(32, 32, 32, 0.49)) ,url('/img/landing5.jpg');
+    background: linear-gradient(rgb(255, 255, 255) 50px,rgba(171, 171, 171, 0.512),rgba(32, 32, 32, 0.49)) ,url('../img/landing5.jpg');
     background-position: center!important;
 }
 ion-icon.green-check{

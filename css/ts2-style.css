@@ -11,7 +11,7 @@ body{
     font-weight: 400;
 }
 .banner::before{
-    background: linear-gradient(rgb(24, 26, 29) 50px,rgba(105, 105, 105, 0.512),rgba(150, 150, 150, 0.49)) ,url('/img/types-of-tea-e1555299753985.jpg');
+    background: linear-gradient(rgb(24, 26, 29) 50px,rgba(105, 105, 105, 0.512),rgba(150, 150, 150, 0.49)) ,url('../img/types-of-tea-e1555299753985.jpg');
     background-position: center!important;
     /* filter: blur(0.7px); */
 }
